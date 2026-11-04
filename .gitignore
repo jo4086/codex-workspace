@@ -1,0 +1,46 @@
+.system/
+
+# Dependencies
+node_modules/
+
+# Build outputs
+dist/
+build/
+coverage/
+*.tsbuildinfo
+
+# Temporary files
+tmp/
+temp/
+.cache/
+*.tmp
+*.log
+
+# Local environment and secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+
+# Editor and OS files
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+
+# Local backups
+*.bak
+*.bak-*
+*.backup
+*.backup-*
+
+# Local test results
+test-results/
+playwright-report/
+

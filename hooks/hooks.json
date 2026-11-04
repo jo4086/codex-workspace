@@ -1,0 +1,18 @@
+{
+  "description": "Shared Git commit hook integration for Codex and Distill tool calls.",
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "^Bash$",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node \"$HOME/.agents/hooks/git/codex-pre-tool-use.mjs\"",
+            "timeout": 10,
+            "statusMessage": "Connecting Git commit hook"
+          }
+        ]
+      }
+    ]
+  }
+}
