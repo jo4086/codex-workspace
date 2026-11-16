@@ -24,6 +24,8 @@ Additional components may be introduced as requirements evolve.
 
 Skill and Hook plans that need definition before activation are kept in [TBD](./TBD/README.md).
 
+For a portfolio-oriented analysis of the project's goals, architecture, implementation examples, and validation limits, see the [portfolio documents](./docs/portfolio/README.md).
+
 ## Core Principles
 
 - Prioritize the user's explicit requirements and preferred workflows.
