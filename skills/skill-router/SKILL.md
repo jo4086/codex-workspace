@@ -47,6 +47,7 @@ If no relevant Skill is available, proceed using applicable project instructions
 ## 5. Cross-Skill Coordination
 
 - Apply multiple Skills only when the task spans their responsibilities.
+- `project-architecture-planner` owns the project-to-child-area planning conversation, responsibility boundaries, interactions, and directory ownership before implementation. Apply the relevant technology-specific structure Skill for detailed placement.
 - `react-router` owns routing architecture, navigation, and route composition.
 - `react-ui-style` owns visual layout, styling, responsiveness, and UI interactions.
 - `react-project-structure` owns React app directories, feature organization, and file placement, including React-based Electron Renderers.
@@ -54,8 +55,9 @@ If no relevant Skill is available, proceed using applicable project instructions
 - `code-style` owns coding conventions, imports, types, and module boundaries.
 - `agent-doc-writer` owns substantive Markdown writing, revision, structure, and navigation.
 - `workspace-unit-doc-manager` owns workspace-unit REQ document meaning, identifiers, traceability, lifecycle, ROADMAP Phase status, and focused context discovery.
-- `skill-spec-designer` owns writing and revising TBD Skill specifications from user notes.
-- `my-skill-creator` owns Skill creation, extension, maintenance, and validation.
+- `skill-spec-designer` owns new TBD Skill specifications and numbered change requests for existing Skills or Hooks.
+- `my-skill-creator` owns Skill creation, extension, maintenance, validation, and closure of validated numbered Skill requests.
+- For an existing component, route TBD planning to `skill-spec-designer` and Skill implementation to `my-skill-creator`. Apply both when the user requests both stages; Hook implementation requires its own owner.
 - Apply both documentation Skills only when REQ-owned work also needs substantive Markdown writing or navigation; a Phase status-only change uses `workspace-unit-doc-manager` alone.
 - For route-aware visual layouts, apply both `react-router` and `react-ui-style` when appropriate.
 - When work changes both React Renderer internals and Electron process organization, apply both project-structure Skills. Use only the relevant one when the change stays within its ownership.

@@ -8,6 +8,7 @@ Map task responsibilities to the appropriate user-authored Skills.
 
 | Skill | Apply When | Responsibility |
 | --- | --- | --- |
+| `project-architecture-planner` | Starting a new project or an unplanned child area, or materially changing architectural boundaries | Project and child-area responsibility planning, interactions, and directory ownership |
 | `react-ui-style` | Creating or modifying React UI, styling, responsive layouts, or interactions | Visual design and UI behavior |
 | `react-router` | Modifying React routes, navigation, providers, or route-aware layouts | Routing architecture |
 | `react-project-structure` | Initializing or reorganizing React app directories, features, or file placement, including a React-based Electron Renderer | React app and feature structure |
@@ -16,13 +17,14 @@ Map task responsibilities to the appropriate user-authored Skills.
 | `git-commit` | Drafting, revising, or reviewing Git commit messages | Commit message convention |
 | `agent-doc-writer` | Substantive writing, revision, structure, navigation, or link changes in project or Skill Markdown | General document structure and navigation |
 | `workspace-unit-doc-manager` | Managing workspace-unit REQ document meaning, identifiers, traceability, lifecycle, ROADMAP Phase status, architecture transitions, or focused session discovery | REQ-based document lifecycle and context discovery |
-| `skill-spec-designer` | Turning user notes into a TBD Skill specification or revising one | TBD specification authoring |
-| `my-skill-creator` | Creating, extending, reviewing, or validating Skills | Skill authoring and maintenance |
+| `skill-spec-designer` | Planning a new Skill or recording a numbered TBD change request for an existing Skill or Hook | TBD specification and request authoring |
+| `my-skill-creator` | Creating, extending, reviewing, or validating Skills, including implementing numbered TBD Skill requests | Skill authoring, validation, and validated request closure |
 
 ## Reference Entry Points
 
 | Skill | Entry Point |
 | --- | --- |
+| `project-architecture-planner` | [SKILL.md](../project-architecture-planner/SKILL.md) |
 | `react-ui-style` | [SKILL.md](../react-ui-style/SKILL.md) |
 | `react-router` | [SKILL.md](../react-router/SKILL.md) |
 | `react-project-structure` | [SKILL.md](../react-project-structure/SKILL.md) |
@@ -44,7 +46,9 @@ Links in this table are relative to this document.
 - Treat missing or unfinished Skills as unavailable.
 - Read each selected Skill's own reference index for detailed guidance.
 - Do not assume all mapped Skills must be used for every task.
+- Select `project-architecture-planner` when a project or meaningful child area needs its responsibilities and interactions planned before implementation. Combine it with the relevant technology-specific structure Skill for detailed placement; skip a new planning cycle for isolated work in an established area.
 - Apply both project-structure Skills when React Renderer internals and Electron process organization are both affected. For Renderer-only React structure, select `react-project-structure`; for Main, Preload, or IPC structure, select `electron-project-structure`.
+- For TBD planning of an existing Skill or Hook, select `skill-spec-designer`; for implementation of a numbered Skill request, select `my-skill-creator`. Select both only when the user requests both planning and implementation.
 
 ## Maintenance
 

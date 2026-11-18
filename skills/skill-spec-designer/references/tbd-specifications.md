@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Turn the user's unordered notes about a proposed Codex Skill into an actionable `TBD/skills/<skill-name>/README.md`. Revise an existing TBD specification when the user supplies more information. Preserve the user's intent while making requirements and open decisions clear to a later implementer.
+Turn the user's unordered notes about a proposed Codex Skill into an actionable `TBD/skills/<skill-name>/README.md`. For a requested change to an existing Skill or Hook, record a numbered request alongside its existing TBD plan. Preserve the user's intent while making requirements and open decisions clear to a later implementer.
 
 ## Gather and Interpret Inputs
 
@@ -38,12 +38,22 @@ Keep requirements, proposals, and pending decisions visibly distinct. Specify ex
 
 Read the current document and any documents it requires before editing. Reconcile supplied changes against previously confirmed user requirements and leave unrelated TBD decisions unchanged. If a consequential confirmed requirement is revised or withdrawn, briefly record the reason in the affected section when the new wording alone would obscure the decision; a separate change log is unnecessary.
 
+## Record a Change to an Existing Skill or Hook
+
+1. Read the component's existing TBD README, request files, and implemented entrypoint. For a Skill use `TBD/skills/<name>/`; for a Hook use `TBD/hooks/<name>/`. Preserve the original specification and unrelated requests.
+2. Create `REQUEST<next-number>.md` using the next available number in that component directory, unless the user specifies another filename. Do not reuse or overwrite a request file.
+3. Record the request date and confirmed requirements. Keep examples, proposed implementation details, and unresolved decisions distinct. State the implementation owner and evidence needed for completion.
+4. Add a dated, unchecked `- [ ]` link to the request in that component's README. Keep the index navigable as requests accumulate. The checkbox means implementation **and** validation are complete; recording a plan does not satisfy it.
+5. In `TBD/skills/README.md`, add an unchecked entry for a new Skill plan. For an existing Skill request, uncheck its entry in the same change and link the pending request as the reason. Preserve other entries and their states.
+
+`skill-spec-designer` records and indexes the request. `my-skill-creator` checks and closes implemented Skill requests after validation. Identify the responsible implementation workflow before a Hook request is marked complete.
+
 ## Review and Handoff
 
 - Compare the draft against the user's notes and clarification answers item by item. Check that no substantive detail was lost, contradicted, or promoted from an example to a requirement.
 - Verify that a later implementer can identify requirements, restrictions, completion criteria, and unresolved decisions without guessing. State the impact of each material open decision; do not invent a user choice merely to make the document look complete.
 - Apply `agent-doc-writer`'s shared Markdown checks. Also check planned or draft status, exact paths, terminology, LF endings, and consistency with related Skills.
-- If `TBD/README.md` already lists the specification, update its entry when the name or path changes. Add an entry only when its current indexing practice calls for one.
+- If `TBD/README.md` already lists the specification, update its entry when the name or path changes. Add an entry only when its current indexing practice calls for one. Keep `TBD/skills/README.md` current for every Skill plan and request; the component README retains detailed state and evidence.
 - Report the created or revised file and any decisions that remain open.
 
 `skill-spec-designer` owns TBD planning documents. `my-skill-creator` owns implementation under `skills/`, including Skill structure, `SKILL.md`, and implementation validation. Do not implement, install, synchronize, or activate the proposed Skill as part of specification work.

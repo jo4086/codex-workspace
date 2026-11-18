@@ -3,7 +3,7 @@
 ## Scope and Ownership
 
 - This file applies to `skills/`.
-- `agent-doc-writer/`, `code-style/`, `electron-project-structure/`, `my-skill-creator/`, `react-project-structure/`, `react-router/`, `react-ui-style/`, `skill-router/`, `skill-spec-designer/`, and `workspace-unit-doc-manager/` are user-authored skills.
+- `agent-doc-writer/`, `code-style/`, `electron-project-structure/`, `my-skill-creator/`, `project-architecture-planner/`, `react-project-structure/`, `react-router/`, `react-ui-style/`, `skill-router/`, `skill-spec-designer/`, and `workspace-unit-doc-manager/` are user-authored skills.
 - `.system/` contains separately bundled skills; do not use its content as a template to overwrite user-authored choices.
 - Keep user skills and bundled skills independent. Change `.system/` only when the request explicitly targets a bundled skill.
 
@@ -23,6 +23,7 @@
   - `workflows/README.md` selects creation from TBD or direct requests, extension, and review procedures.
   - `standards/README.md` links structure, documentation, indexes, Cross-Skill ownership, and validation.
   - `templates/README.md` links adaptable entrypoint, reference, and index shapes.
+- `project-architecture-planner/SKILL.md` is the project and child-area architecture planning entrypoint; its references separate initial project planning from recursive child-area planning.
 - `react-project-structure/SKILL.md` is the React application and feature organization entrypoint.
 - `react-router/SKILL.md` is the routing entrypoint.
 - `react-router/references/README.md` routes to focused documents:
@@ -42,7 +43,7 @@
 - `skill-spec-designer/references/README.md` routes to the specification authoring, clarification, revision, and handoff procedure.
 - `workspace-unit-doc-manager/SKILL.md` is the workspace-unit REQ document lifecycle and context-discovery entrypoint.
 - `workspace-unit-doc-manager/references/README.md` routes to document lifecycle and focused session workflows.
-- `technologies/README.md` is currently empty. Do not infer rules from its filename or describe it as complete guidance.
+- `react-ui-style/references/technologies/README.md` routes to its Tailwind CSS reference; do not infer rules for other technologies from the category name.
 
 ## Reading and Coordination
 
@@ -51,10 +52,13 @@
 - `skill-router` owns Skill selection, coordination, and the user-authored Skill map; specialized Skills retain their domain guidance.
 - `git-commit` owns commit message wording; the repository Git hook owns automatic subject validation. Neither component authorizes a commit or activates the hook.
 - `agent-doc-writer` owns general Markdown structure, revision, and navigation; project instructions and specialized Skills retain document-specific content and required formats.
-- `skill-spec-designer` owns creating and revising Skill specifications under `TBD/`; `my-skill-creator` owns implementation and validation under `skills/`.
+- `skill-spec-designer` owns new Skill specifications and change requests under `TBD/`; `my-skill-creator` owns Skill implementation and validation under `skills/`.
+- For existing Skills or Hooks, `skill-spec-designer` records numbered TBD requests and indexes them with dated, unchecked entries. `my-skill-creator` implements numbered Skill requests and marks only fully validated entries complete; Hook implementation requires its own owner.
 - `workspace-unit-doc-manager` owns workspace-unit REQ document lifecycle, traceability, phased status, and focused context discovery; `agent-doc-writer` retains general Markdown ownership.
+- `project-architecture-planner` owns project and child-area responsibility planning before implementation; React and Electron structure Skills own their technology-specific placement, and `workspace-unit-doc-manager` owns related REQ document lifecycle.
 - `react-router` owns route configuration, navigation architecture, router providers, and route-layout composition.
 - `react-ui-style` owns visual layout, sizing, responsiveness, component styling, and UI interactions.
+- For React UI work, consult its layout, typography, and iconography references as relevant to page density, control sizing, page headings, icon clearance, and composite alignment.
 - `code-style` owns names, imports, types, errors, file organization, and module boundaries across application and package code.
 - `my-skill-creator` owns this repository's Skill workflows, Skill-specific documentation conventions, and validation expectations. The bundled `skill-creator` owns generic scaffolding, UI metadata generation, and structural validation tooling.
 - Apply `react-router` and `react-ui-style` together only when work spans route structure and visual UI implementation. Do not load the other skill for routing-only or styling-only work.

@@ -14,9 +14,10 @@ Convert a planned Skill specification in `TBD/skills/<skill-name>/README.md` int
 6. Write individual references, category indexes, the root index, and `SKILL.md`, in that order.
 7. Compare the result with every requirement and completion criterion.
 8. Run structural, link, format, and relevant behavioral checks.
+9. Record completion evidence in the component's TBD README. Check its `TBD/skills/README.md` entry only if no planned or unverified work remains; otherwise leave it unchecked and identify the remaining work.
 
 ## Unresolved Decisions
 
 Do not guess when an unresolved decision changes scope, ownership, permissions, compatibility, or output structure. Preserve the decision and ask the user when implementation cannot proceed safely. Report non-blocking unresolved items explicitly.
 
-Never edit the source TBD specification unless the user separately requests that change.
+Keep the source TBD specification's requirements and decisions intact unless the user separately requests a change to them. Completion evidence and index status may be updated after validation.

@@ -1,6 +1,6 @@
 # Workspace Unit Doc Manager — REQ별 문서 구조 개정안
 
-**상태:** TBD 명세. 기존 구현 Skill과 대상 프로젝트 문서는 아직 변경하지 않았다.
+**상태:** [Skill](../../../skills/workspace-unit-doc-manager/SKILL.md) 구현·검증 완료. 이번 요청에서 대상 프로젝트 문서는 변경하지 않았다.
 
 이 문서는 [이전 검토안](./README.v1.md)을 보존한 뒤, 사용자가 제시한 `apps/electron/docs` 운영 방식을 기준으로 새 기능의 문서를 찾고 연결하는 규칙을 정의한다. 이 구조는 `maple_repo`의 Electron 문서에서 관찰한 형식을 일반화한 **개정 제안**이며, 기존 문서의 즉시 이동을 요구하지 않는다.
 
@@ -88,10 +88,14 @@ apps/electron/docs/
 
 ## 구현 시 완료 기준
 
-- [ ] `workspace-unit-doc-manager`의 진입점과 관련 참조가 REQ별 폴더 구조, REQUIREMENTS·REQUESTS 경계, 문서 생성 조건을 안내한다.
-- [ ] 실제 `apps/electron/docs`형 구조에서 `REQ02`를 넣었을 때 요구 → SPEC → Phase 계획 → GOAL → REVIEW를 경로와 직접 링크로 추적할 수 있다.
-- [ ] 기존 문서의 링크·앵커·상태를 임의로 이전하지 않으며, `ROADMAP.md`가 Phase 상태의 단일 원본으로 남는다.
-- [ ] GOAL·REVIEW의 진행 항목은 작성 시 미완료 체크박스로 시작하고 검증 근거가 생겼을 때만 체크한다.
-- [ ] Skill 구조·링크·사용 흐름을 검증하고, 적용 대상 프로젝트의 기존 `AGENTS.md`와 충돌하는 지점을 확인한다.
+- [x] `workspace-unit-doc-manager`의 진입점과 관련 참조가 REQ별 폴더 구조, REQUIREMENTS·REQUESTS 경계, 문서 생성 조건을 안내한다.
+- [x] 실제 `apps/electron/docs`형 구조에서 `REQ02`를 넣었을 때 요구 → SPEC → Phase 계획 → GOAL → REVIEW를 경로와 직접 링크로 추적할 수 있다.
+- [x] 기존 문서의 링크·앵커·상태를 임의로 이전하지 않으며, `ROADMAP.md`가 Phase 상태의 단일 원본으로 남는다.
+- [x] GOAL·REVIEW의 진행 항목은 작성 시 미완료 체크박스로 시작하고 검증 근거가 생겼을 때만 체크한다.
+- [x] Skill 구조·링크·사용 흐름을 검증하고, 적용 대상 프로젝트의 기존 `AGENTS.md`와 충돌하는 지점을 확인한다.
 
-**남은 선택:** 이번 명세는 `문서유형/REQ02/` 방식을 기본으로 제안한다. 사용자가 `REQ02-Phase01.md` 같은 평면 파일명을 선호하면 구현 전에 한 방식으로 확정해야 한다. `REQUESTS`를 모든 REQ에 필수로 만들지, 개별 요청 기록이 있을 때만 만들지도 대상 프로젝트 운영 방식에 따라 확인한다.
+**구현 선택:** 새 REQ 문서는 `문서유형/REQ ID/` 경로를 기본으로 한다. `REQUESTS/REQ ID/`는 보존할 개별 요청 기록이 있을 때만 만든다.
+
+**검증 근거 (2026-11-18):** `maple_repo/apps/electron/docs`의 실제 기존 구조를 임시 복사해 `REQ999` 시나리오의 REQUIREMENTS → SPEC → ROADMAP Phase → GOAL → REVIEW 직접 링크, 미완료 체크박스, 기존 파일 보존을 확인했다. 대상 프로젝트 파일은 수정하지 않았다. `quick_validate.py skills/workspace-unit-doc-manager`, 네 Skill의 링크·LF·진입점 확인, `git diff --check`가 통과했다.
+
+**대상 프로젝트 적용 제한:** `maple_repo/apps/electron/AGENTS.md`는 완료 후 `GOAL/README.md`의 상태 갱신을 지시하고, 실제 GOAL 목차에도 상태 열이 있다. 이 Skill의 `ROADMAP.md` 단일 상태 원본 규칙과 충돌한다. Skill의 충돌 처리 지침에 따라, 대상 프로젝트에 이 규칙을 적용할 때는 먼저 해당 지침과 상태 목차의 정합성을 결정해야 한다.

@@ -1,17 +1,17 @@
 ---
 name: skill-spec-designer
-description: Turn a user's notes about a proposed Codex Skill into a TBD specification, or revise an existing one. Use when the user asks to plan a Skill in TBD before implementation.
+description: Draft a new Codex Skill specification or record a numbered change request for an existing Skill or Hook in TBD. Use when the user asks to plan a component before implementation.
 ---
 
 # Skill Spec Designer
 
 ## Purpose
 
-Turn the user's listed capabilities, rules, examples, and constraints into `TBD/skills/<skill-name>/README.md`, or revise an existing TBD specification with new information. The output is an actionable plan for a future Skill.
+Turn the user's listed capabilities, rules, examples, and constraints into a new Skill specification or a numbered change request for an existing Skill or Hook in `TBD/`.
 
 ## Activation
 
-Apply when the user asks to create or revise a TBD specification for a proposed Skill. Skill implementation, maintenance, and validation belong to `my-skill-creator`.
+Apply when the user asks to create or revise a TBD specification for a proposed Skill, or to plan a change to an existing Skill or Hook in TBD. Skill implementation and validation belong to `my-skill-creator`; Hook implementation needs its own owner.
 
 ## Core Principles
 
@@ -29,12 +29,12 @@ Start at [references/README.md](./references/README.md), then read [TBD Skill Sp
 
 1. Extract and organize the user's notes; inspect related documents and ownership boundaries.
 2. Resolve supported details and use the reference's clarification process for remaining consequential choices.
-3. Write or revise the TBD README, recording each confirmed user requirement and open decision.
+3. Write or revise the new Skill specification, or record an existing component change in its next numbered request file and index it from the component README.
 4. Compare the result with the user's input, apply shared Markdown checks, and report remaining decisions.
 
 ## Cross-Skill Coordination
 
-This Skill owns specification writing in `TBD/`. `agent-doc-writer` owns generic Markdown preservation, length, splitting, and link rules; apply it without relaxing TBD source, status, decision, handoff, or validation requirements. `my-skill-creator` owns implementing and validating Skills under `skills/`. Apply both planning and implementation Skills only when the user explicitly requests both, while keeping their outputs and validations separate.
+This Skill owns planning and request indexing in `TBD/`. `agent-doc-writer` owns generic Markdown preservation, length, splitting, and link rules; apply it without relaxing TBD source, status, decision, handoff, or validation requirements. `my-skill-creator` owns implementing and validating Skills under `skills/` and closes validated Skill request entries. Apply both planning and implementation Skills only when the user explicitly requests both, while keeping their outputs and validations separate.
 
 ## Restrictions
 

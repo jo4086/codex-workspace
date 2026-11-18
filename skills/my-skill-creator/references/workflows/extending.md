@@ -6,12 +6,17 @@ Change an existing Skill while preserving its established architecture and unrel
 
 ## Extension Workflow
 
-1. Enter through `SKILL.md` and follow its routing to the affected references.
-2. Inspect callers, indexes, related Skills, and applicable instructions before moving or removing content.
-3. Update only the references that own the requested behavior.
-4. Add a category or reorganize references only when distinct responsibilities or document size justify it.
-5. Update every dependent index and relative link.
-6. Apply the [Skill validation standard](../standards/validation.md) to the changed Skill and affected behavior.
+1. When implementing a numbered TBD change request, read `TBD/skills/<skill-name>/README.md` and the selected `REQUEST*.md` before editing. Keep earlier requests and the original specification available.
+2. Enter through `SKILL.md` and follow its routing to the affected references.
+3. Inspect callers, indexes, related Skills, and applicable instructions before moving or removing content.
+4. Update only the references that own the requested behavior.
+5. Add a category or reorganize references only when distinct responsibilities or document size justify it.
+6. Update every dependent index and relative link.
+7. Compare the result against each selected request requirement and apply the [Skill validation standard](../standards/validation.md) to the changed Skill and affected behavior.
+8. Only after full implementation and validation, mark the selected dated entry in its TBD README `- [x]` and record or link the checks performed. Leave partial or unverified requests unchecked; update each request checklist item only after its condition is verified.
+9. Review all work for that Skill listed in its TBD README. Check its `TBD/skills/README.md` entry only when the original plan and every applicable request are implemented and validated. Otherwise leave the entry unchecked and link the remaining work. A `SKILL.md` alone does not prove that all TBD work is complete.
+
+The TBD request retains its original date and wording as the requirement source. Request creation and indexing belong to `skill-spec-designer`; Hook implementation needs its own owner.
 
 ## Review Workflow
 

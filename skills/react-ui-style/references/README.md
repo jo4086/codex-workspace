@@ -8,9 +8,9 @@ Use this index to locate relevant reference documents. Read only the documents r
 
 | Category     | Description                                                                    | Index                            |
 | ------------ | ------------------------------------------------------------------------------ | -------------------------------- |
-| Foundations  | Visual design principles, layout, typography, colors, spacing, and iconography | [README](foundations/README.md)  |
-| Interactions | Editing, navigation, user interactions, and feedback patterns                  | [README](interactions/README.md) |
-| Technologies | Framework-specific styling and implementation conventions                      | [README](technologies/README.md) |
+| Foundations  | Visual design principles, layout, typography, iconography, and scrollbars       | [README](./foundations/README.md)  |
+| Interactions | Editing, navigation, user interactions, and feedback patterns                  | [README](./interactions/README.md) |
+| Technologies | Framework-specific styling and implementation conventions                      | [README](./technologies/README.md) |
 
 ## Navigation Rules
 

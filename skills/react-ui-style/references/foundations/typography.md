@@ -32,6 +32,7 @@ Use a clear hierarchy based on the semantic role of text.
 ### Rules
 
 - Use semantic heading levels (`h1`–`h6`) appropriately.
+- Do not require a visible page title in a base layout. Omit it when it adds no useful context; when useful, keep its visual prominence proportional to the page and allow the content to use the remaining space.
 - Do not select heading elements solely for visual appearance.
 - Prefer a consistent type scale.
 - Distinguish hierarchy through size, weight, and spacing.

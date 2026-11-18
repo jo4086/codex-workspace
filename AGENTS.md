@@ -8,6 +8,8 @@ Managed components include Skills, Hooks, Agents, configurations, templates, and
 
 The repository serves as the source workspace for Codex customizations.
 
+See the [repository README](./README.md) for component navigation.
+
 ## 2. Component Organization
 
 - Organize components by responsibility and purpose.
@@ -21,16 +23,20 @@ The repository serves as the source workspace for Codex customizations.
 
 When creating or modifying Skills:
 
-1. Inspect existing Skills and their conventions.
-2. Define the Skill's purpose, scope, and activation conditions.
-3. Design reference documents before writing `SKILL.md` for new Skills.
-4. Keep `SKILL.md` focused on purpose, principles, routing, and restrictions.
-5. Place detailed implementation guidelines in `references/`.
-6. Use `README.md` files as reference indexes when necessary.
-7. Keep reference documents focused and preferably under 200 lines.
-8. Avoid duplicating reference content in `SKILL.md`.
-9. Define cross-Skill coordination when responsibilities overlap.
-10. Preserve compatibility with the supported Codex Skill format.
+1. Use `skill-router` to select the relevant Skills. Use `skill-spec-designer` for TBD planning and `my-skill-creator` for implementation and validation.
+2. Inspect existing Skills and their conventions. For a numbered change to an existing Skill, read its TBD README and the selected `REQUEST*.md` before editing.
+3. Define the Skill's purpose, scope, and activation conditions.
+4. Design reference documents before writing `SKILL.md` for new Skills.
+5. Keep `SKILL.md` focused on purpose, principles, routing, and restrictions.
+6. Place detailed implementation guidelines in `references/`.
+7. Use `README.md` files as reference indexes when necessary.
+8. Keep reference documents focused and preferably under 200 lines.
+9. Avoid duplicating reference content in `SKILL.md`.
+10. Define cross-Skill coordination when responsibilities overlap.
+11. Preserve compatibility with the supported Codex Skill format.
+
+For an incremental TBD change, keep the original specification and request files. Mark only a fully implemented and validated Skill request complete in its TBD README, with check evidence; leave partial or unverified requests open.
+For TBD planning of an existing Skill or Hook, record the change in a numbered request and add a dated, unchecked link in its component README.
 
 ## 4. Hook Development
 
@@ -81,6 +87,7 @@ When creating or modifying Hooks:
 - Do not modify the active Codex environment without explicit authorization.
 - Inspect existing targets before deployment or synchronization.
 - Preserve active configurations and components unless changes are requested.
+- When explicitly asked to install or update repository Skills in `~/.agents/skills`, use `scripts/sync-skills.sh <skill-name>...` after validating the source Skills. It archives changed installed copies under `archive/skills/<skill-name>/<YYYYMMDD-HHMMSS>/`, except `skill-router`, which it compares and syncs automatically without a lasting archive. Identical copies are skipped unless the router is explicitly forced.
 
 ## 9. Repository Restrictions
 

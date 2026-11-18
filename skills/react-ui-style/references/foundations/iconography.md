@@ -98,6 +98,7 @@ Rules:
 
 - Prefer existing design tokens over hardcoded values.
 - Maintain consistent size, stroke, spacing, and alignment.
+- Leave context-appropriate clearance between icons and nearby edges, including icon-only controls and icons inside inputs or composite controls.
 - Keep trailing icons in fixed positions regardless of text length.
 - Avoid layout shifts when icons appear or change.
 - Avoid unnecessary icon backgrounds, borders, and shadows.

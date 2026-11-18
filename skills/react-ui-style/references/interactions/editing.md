@@ -56,7 +56,7 @@ Define predictable behavior for inline editors and forms. Preserve project conve
 - Keep controls and status text stable as states change to avoid unexpected layout shifts.
 - Announce save results and validation failures when they are not otherwise exposed to assistive technologies.
 - Keep actionable error messages until resolved or dismissed; do not hide them on a short timer.
-- Follow [feedback guidelines](feedback.md) for loading, errors, confirmations, and announcements.
+- Follow [feedback guidelines](./feedback.md) for loading, errors, confirmations, and announcements.
 - Follow [iconography guidelines](../foundations/iconography.md) when editing actions use icons.
 
 ## Restrictions

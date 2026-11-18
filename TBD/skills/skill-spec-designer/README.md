@@ -95,4 +95,9 @@ The future Skill is complete when:
 - A revision preserves existing confirmed requirements and makes the requested change.
 - Metadata, reference links, Markdown structure, and workflow behavior pass the repository's Skill validation checks.
 
-**Current status:** Specification only. The Skill has not been implemented.
+**Original specification status:** Historical plan; the [Skill](../../../skills/skill-spec-designer/SKILL.md) is implemented. The change request below is tracked separately.
+
+## Change Requests
+
+- [x] **2026-11-08:** [REQUEST01 — Incremental requests for existing components](./REQUEST01.md). Implemented and validated; checks are recorded in the request.
+- [x] **2026-11-18:** [REQUEST02 — Maintain the TBD Skill status index](./REQUEST02.md). Implemented and validated; checks are recorded in the request.

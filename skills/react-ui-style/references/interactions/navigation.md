@@ -56,7 +56,7 @@ Define predictable behavior for links, transitions, menus, tabs, and expand/coll
 - Avoid animated height or position changes that obscure focus, cause content jumps, or delay input.
 - Keep trigger placement stable when regions expand, collapse, or load.
 - Follow [iconography guidelines](../foundations/iconography.md) for directional and external-link icons.
-- Follow [feedback guidelines](feedback.md) for transition loading and failures.
+- Follow [feedback guidelines](./feedback.md) for transition loading and failures.
 
 ## Failure Handling
 

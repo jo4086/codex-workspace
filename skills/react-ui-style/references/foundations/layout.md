@@ -117,6 +117,9 @@ All examples are illustrative, not mandatory design values.
 - Use Flexbox for primarily one-dimensional layouts.
 - Use Grid for two-dimensional layouts.
 - Prefer consistent alignment and spacing.
+- On dashboards, edit pages, and other dense views, use available space for the work itself. Add card wrappers only when they clarify grouping; spacing or dividers can separate regions with less visual weight.
+- Size dropdowns, text inputs, and similar controls for their content and task by default. Use full width when the interaction benefits from it, such as a page-wide search field, or when a narrow viewport requires it.
+- In composite controls, align internal dividers and coordinate child heights, padding, and alignment so mixed content stays visually stable.
 - Use `min-w-0` and `min-h-0` where flex or grid children must shrink.
 - Avoid absolute positioning for ordinary document layout.
 - Preserve predictable layout behavior as content changes.

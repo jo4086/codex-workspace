@@ -6,9 +6,10 @@ Core visual design guidelines for React user interfaces.
 
 | Document                         | Responsibility                                                      | Read When                               |
 | -------------------------------- | ------------------------------------------------------------------- | --------------------------------------- |
-| [layout.md](layout.md)           | Viewport, width strategies, responsive layouts, alignment, overflow | Creating or modifying visual layouts    |
-| [typography.md](typography.md)   | Text hierarchy, fonts, readability, wrapping, numeric text          | Creating or modifying text presentation |
-| [iconography.md](iconography.md) | Icon selection, sizing, alignment, semantics, accessibility         | Adding or modifying icons               |
+| [layout.md](./layout.md)           | Viewport, width strategies, responsive layouts, alignment, overflow | Creating or modifying visual layouts    |
+| [typography.md](./typography.md)   | Text hierarchy, fonts, readability, wrapping, numeric text          | Creating or modifying text presentation |
+| [iconography.md](./iconography.md) | Icon selection, sizing, alignment, semantics, accessibility         | Adding or modifying icons               |
+| [scrollbars.md](./scrollbars.md) | Scrollbar thickness, visibility states, and interaction checks | Styling a scroll region's scrollbar |
 
 ## Reference Rules
 

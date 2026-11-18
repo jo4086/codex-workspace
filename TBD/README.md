@@ -17,11 +17,15 @@ Each idea may use its own subdirectory while it is being developed.
 
 ## Skill Specifications
 
+[Skill status index](./skills/README.md) shows which TBD Skill plans or additions still need implementation and validation.
+
 - [agent-doc-writer](./skills/agent-doc-writer/README.md) — Original plan; [implemented Skill](../skills/agent-doc-writer/SKILL.md).
 - [code-style](./skills/code-style/README.md) — Original plan; [implemented Skill](../skills/code-style/SKILL.md).
 - [git-commit](./skills/git-commit/README.md) — Commit message convention; [implemented Skill](../skills/git-commit/SKILL.md).
 - [my-skill-creator](./skills/my-skill-creator/README.md) — Original plan; [implemented Skill](../skills/my-skill-creator/SKILL.md).
+- [project-architecture-planner](./skills/project-architecture-planner/README.md) — Original plan for project-wide and recursive area architecture planning; [implemented Skill](../skills/project-architecture-planner/SKILL.md).
 - [project-structures](./skills/project-structures/README.md) — Original plans; implemented [React Skill](../skills/react-project-structure/SKILL.md) and [Electron Skill](../skills/electron-project-structure/SKILL.md).
+- [react-ui-style](./skills/react-ui-style/README.md) — Planned additions to the implemented [React UI Style Skill](../skills/react-ui-style/SKILL.md).
 - [skill-spec-designer](./skills/skill-spec-designer/README.md) — Original plan; [implemented Skill](../skills/skill-spec-designer/SKILL.md).
 - [workspace-unit-doc-manager](./skills/workspace-unit-doc-manager/README.md) — REQ별 문서 구조 개정안; [이전 검토안](./skills/workspace-unit-doc-manager/README.v1.md), [현재 구현 Skill](../skills/workspace-unit-doc-manager/SKILL.md).
 

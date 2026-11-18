@@ -58,6 +58,18 @@ For a portfolio-oriented analysis of the project's goals, architecture, implemen
 6. Document important decisions and usage requirements.
 7. Integrate into the active Codex environment only when requested.
 
+## Syncing Skills
+
+After validating a Skill, run [sync-skills.sh](./scripts/sync-skills.sh) from the repository root with the names to install or update:
+
+```bash
+scripts/sync-skills.sh project-architecture-planner
+```
+
+The script copies each named Skill from `skills/` to `~/.agents/skills/` and always compares `skill-router` as part of the same run. It replaces `skill-router` only when its repository copy differs, including when another Skill's registration changed its map. Changed installed copies of other Skills are first moved to `archive/skills/<skill-name>/<YYYYMMDD-HHMMSS>/`; the router is replaced without a lasting archive. Identical copies are skipped. Creating or editing a Skill in this repository does not run the script automatically.
+
+For a one-time router refresh even when both copies are identical, run `scripts/sync-skills.sh --force-router`. This still leaves no router archive.
+
 ## Project Status
 
 This repository is developed incrementally. Its structure and components will evolve according to actual requirements rather than a fixed implementation roadmap.

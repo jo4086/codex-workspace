@@ -49,6 +49,8 @@ For React UI design, styling, or interaction tasks:
 4. Read only the documents required for the task.
 5. Avoid loading unrelated references.
 
+When content images need enlargement or browsing as a gallery, use the Interactions index to read [Image Lightbox Gallery](./references/interactions/image-lightbox-gallery.md). Skip it for unrelated images and UI work.
+
 ## 5. Implementation Workflow
 
 1. Inspect the existing project structure and conventions.

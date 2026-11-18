@@ -286,4 +286,10 @@ The Skill is considered implemented when:
 - Structural and documentation validation requirements are satisfied.
 - The implementation is consistent with this specification.
 
-**Current status:** Specification only. Implementation has not started.
+**Original specification status:** Historical plan; the [Skill](../../../skills/my-skill-creator/SKILL.md) is implemented. The change request below is tracked separately.
+
+## Change Requests
+
+- [x] **2026-11-08:** [REQUEST01 — Implement and close numbered Skill requests](./REQUEST01.md). Implemented and validated; checks are recorded in the request.
+- [x] **2026-11-18:** [REQUEST02 — Reference images for managed Skills](./REQUEST02.md). Implemented and validated; checks are recorded in the request.
+- [x] **2026-11-18:** [REQUEST03 — Close the TBD Skill status index entry](./REQUEST03.md). Implemented and validated; checks are recorded in the request. REQUEST02 remains open.
