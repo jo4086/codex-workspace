@@ -5,10 +5,10 @@
 Load only context needed for the requested operation:
 
 1. Locate candidate workspace units and read applicable root-to-target `AGENTS.md` files.
-2. Identify the owning unit before selecting a REQ. Do not infer ownership from a similar feature name in another unit.
+2. Identify the owning unit and its established `REQUESTS` or new `FEEDBACK` model before selecting a REQ. Do not infer ownership or document model from another unit.
 3. Read the unit's requirement index and the selected requirement document.
 4. Follow direct links according to task type:
-   - requirements work: source REQUESTS and affected acceptance criteria;
+   - requirements work: source FEEDBACK or REQUESTS under the selected model and affected acceptance criteria;
    - design or implementation work: relevant SPEC and current Phase plan;
    - execution tracking: current Phase and GOAL;
    - verification: current Phase, GOAL, REVIEW, and linked evidence;
@@ -18,19 +18,22 @@ Load only context needed for the requested operation:
 
 Do not load every category, every REQ, or all historical Phase records by default.
 
-## Classify New Work
+## Classify New Work and Revisions
 
-1. Use a new REQ when work has durable scope or acceptance criteria, spans multiple documents or phases, or needs stable traceability.
-2. Keep a small independent correction in the established REQUESTS flow when a REQ would add no useful lifecycle.
-3. Preserve undecided product or technical choices as open choices. Do not write them as confirmed requirements.
-4. Confirm the owning unit, existing naming conventions, and used or retired IDs before assigning an ID.
-5. Create `REQUIREMENTS/<REQ-ID>.md` and update its index. Create other REQ-owned documents only when their trigger in [REQ Document Lifecycle](./document-lifecycle.md) applies.
+1. Identify the unit's document model from its instructions and existing documents. Never switch an established `REQUESTS` unit to `FEEDBACK` as a side effect of handling work.
+2. Use a new REQ for a separate new feature with durable scope or acceptance criteria, multiple documents or phases, or a need for stable traceability, even when it is requested during work on another feature.
+3. Treat a change of direction, an inadequate or awkward result, or a clarifying example as a revision of the owning REQ when it changes that feature. In a new unit, preserve meaningful revisions in FEEDBACK; in an established unit, follow its existing REQUESTS convention. Do not record every conversational iteration.
+4. When a revision is agreed, update the authoritative REQUIREMENTS and affected SPEC, Phase plan, or GOAL. Keep source context linked where useful; do not leave the change only in its feedback or request record.
+5. Keep a small independent correction with no owning REQ in the unit's established flow when a REQ would add no useful lifecycle. Do not invent a FEEDBACK hierarchy for it.
+6. Preserve undecided product or technical choices as open choices. Do not write them as confirmed requirements.
+7. Confirm the owning unit, existing naming conventions, and used or retired IDs before assigning an ID.
+8. Create `REQUIREMENTS/<REQ-ID>.md` and update its index. Create other REQ-owned documents only when their trigger in [REQ Document Lifecycle](./document-lifecycle.md) applies.
 
 ## Build a Phase Trace
 
 For a representative `REQ02-Phase01`:
 
-1. Link `REQUIREMENTS/REQ02.md` to source `REQUESTS/REQ02/<topic>.md` only when that record exists.
+1. Link `REQUIREMENTS/REQ02.md` to source `FEEDBACK/REQ02/<topic>.md` in the new model or `REQUESTS/REQ02/<topic>.md` in the established model, only when that record exists.
 2. Link `SPEC/REQ02/<feature-area>.md` to the acceptance criteria it details.
 3. Add `REQ02-Phase01` and its current status to `ROADMAP.md`; link a detailed plan only if one is needed.
 4. If detailed planning is needed, link `ROADMAP/REQ02/Phase01.md` to the requirement, target SPEC, and ROADMAP entry.
@@ -63,6 +66,7 @@ Read every applicable `AGENTS.md` from repository root through the target docume
 - Confirm full REQ-local Phase IDs where identity or status appears.
 - Confirm `ROADMAP.md` remains the only Phase status source.
 - Confirm optional documents exist only for their actual trigger.
+- Confirm the selected document model matches the unit's instructions and existing documents; do not mix FEEDBACK and REQUESTS or migrate legacy paths without authorization.
 - Confirm GOAL and REVIEW checked items have nearby evidence.
 - Confirm current architecture and proposals remain distinct.
 - Confirm category indexes and direct relative links resolve.

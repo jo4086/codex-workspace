@@ -99,3 +99,7 @@ apps/electron/docs/
 **검증 근거 (2026-11-18):** `maple_repo/apps/electron/docs`의 실제 기존 구조를 임시 복사해 `REQ999` 시나리오의 REQUIREMENTS → SPEC → ROADMAP Phase → GOAL → REVIEW 직접 링크, 미완료 체크박스, 기존 파일 보존을 확인했다. 대상 프로젝트 파일은 수정하지 않았다. `quick_validate.py skills/workspace-unit-doc-manager`, 네 Skill의 링크·LF·진입점 확인, `git diff --check`가 통과했다.
 
 **대상 프로젝트 적용 제한:** `maple_repo/apps/electron/AGENTS.md`는 완료 후 `GOAL/README.md`의 상태 갱신을 지시하고, 실제 GOAL 목차에도 상태 열이 있다. 이 Skill의 `ROADMAP.md` 단일 상태 원본 규칙과 충돌한다. Skill의 충돌 처리 지침에 따라, 대상 프로젝트에 이 규칙을 적용할 때는 먼저 해당 지침과 상태 목차의 정합성을 결정해야 한다.
+
+## Change Requests
+
+- [x] **2026-11-20:** [REQUEST01 — Separate new feature requirements from revision feedback](./REQUEST01.md). New units use `FEEDBACK` for meaningful revisions; units using the earlier `REQUESTS` structure retain it. Implemented and validated; evidence is in the request.

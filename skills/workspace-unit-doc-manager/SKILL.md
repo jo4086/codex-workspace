@@ -7,17 +7,18 @@ description: Manage substantial workspace-unit work through REQ-owned requiremen
 
 ## Purpose
 
-Manage the document lifecycle for substantial work owned by one workspace unit. Keep requirements, implementation detail, phased status, completion criteria, verification, and current architecture traceable without forcing one repository layout or migrating valid history.
+Manage the document lifecycle for substantial work owned by one workspace unit. Keep requirements, revision feedback, implementation detail, phased status, completion criteria, verification, and current architecture traceable without forcing one repository layout or migrating valid history.
 
-Apply this Skill when work needs durable REQ ownership, acceptance criteria, multiple phases or document types, Phase status changes, architecture transitions, legacy document integration, or focused discovery of unit context. Do not require a REQ for a small independent correction when the unit's existing REQUESTS flow is sufficient.
+Apply this Skill when work needs durable REQ ownership, acceptance criteria, multiple phases or document types, Phase status changes, architecture transitions, legacy document integration, or focused discovery of unit context. Do not require a REQ for a small independent correction when the unit's established flow is sufficient.
 
 ## Core Principles
 
 - Follow applicable root-to-target instructions and established unit conventions before applying default paths.
+- Select the document workflow per unit: preserve an established `REQUESTS` structure, and use `FEEDBACK` for meaningful revisions when establishing a new unit's documentation model. Do not mix the two structures in one unit.
 - Use stable unit-local REQ IDs and REQ-local Phase IDs.
 - Group new REQ-owned documents by document type and then REQ ID.
 - Keep `ROADMAP.md` as the sole source of Phase status.
-- Create optional SPEC, REQUESTS, detailed ROADMAP, GOAL, and REVIEW documents only when their content exists or separate ownership improves clarity.
+- Create optional FEEDBACK or legacy REQUESTS records, SPEC, detailed ROADMAP, GOAL, and REVIEW documents only when their content exists or separate ownership improves clarity.
 - Keep current implemented architecture separate from proposals.
 - Check completion or verification items only when supporting evidence exists.
 - Preserve legacy paths, links, anchors, IDs, status, and evidence unless migration is explicitly authorized.
@@ -27,14 +28,14 @@ Apply this Skill when work needs durable REQ ownership, acceptance criteria, mul
 
 Start at [references/README.md](./references/README.md), then load only the guidance required for the task.
 
-- Read [REQ Document Lifecycle](./references/document-lifecycle.md) for placement, document ownership, creation triggers, identifiers, status, evidence, links, and legacy preservation.
-- Read [Session Workflows](./references/session-workflows.md) for selective discovery, new-work classification, Phase tracing and completion, target-instruction conflicts, and final checks.
+- Read [REQ Document Lifecycle](./references/document-lifecycle.md) for document-model selection, placement, ownership, creation triggers, identifiers, status, evidence, links, and legacy preservation.
+- Read [Session Workflows](./references/session-workflows.md) for selective discovery, new-work and revision classification, Phase tracing and completion, target-instruction conflicts, and final checks.
 
 ## Workflow
 
-1. Read applicable `AGENTS.md` files and identify the owning workspace unit and its documentation root.
+1. Read applicable `AGENTS.md` files, identify the owning workspace unit and its documentation root, and select its existing or new document workflow.
 2. Discover the relevant REQ through its index, then load only documents required by the task.
-3. Classify new work as a substantial REQ or a small independent request without inventing scope.
+3. Classify new features, revisions to an existing REQ, and small independent corrections without inventing scope.
 4. Apply the lifecycle rules for IDs, document triggers, links, evidence, and status ownership.
 5. Preserve open choices and stop on consequential instruction, scope, ownership, permission, or compatibility conflicts.
 6. Verify direct links, affected indexes, ID consistency, checklist evidence, Phase status, architecture truth, and legacy preservation.
@@ -53,7 +54,8 @@ Apply multiple Skills only when the task spans their responsibilities. Keep deta
 ## Restrictions
 
 - Do not force an `apps/electron/docs/` layout; adapt the lifecycle to the owning unit's established documentation root.
-- Do not create every possible REQ document or a REQUESTS folder without individual request records.
+- Do not create every possible REQ document or a FEEDBACK or REQUESTS folder without a meaningful record.
+- Do not introduce `FEEDBACK` into a unit already using the earlier `REQUESTS` model, or migrate its paths without an explicitly authorized migration scope.
 - Do not duplicate Phase status outside `ROADMAP.md`.
 - Do not mark planned, partial, failed, blocked, or unverified work complete.
 - Do not rewrite current architecture to match an unimplemented proposal.

@@ -8,8 +8,8 @@ Route workspace-unit documentation work to lifecycle rules or focused operating 
 
 | Reference | Description |
 | --- | --- |
-| [REQ Document Lifecycle](./document-lifecycle.md) | Defines document-type/REQ placement, ownership, creation triggers, stable IDs, status, evidence, links, and legacy preservation. |
-| [Session Workflows](./session-workflows.md) | Defines selective discovery, REQ and Phase operations, target-instruction conflict handling, and final checks. |
+| [REQ Document Lifecycle](./document-lifecycle.md) | Defines unit-level document-model selection, document-type/REQ placement, ownership, creation triggers, stable IDs, status, evidence, links, and legacy preservation. |
+| [Session Workflows](./session-workflows.md) | Defines selective discovery, new-feature and revision classification, REQ and Phase operations, target-instruction conflict handling, and final checks. |
 
 ## Usage
 
