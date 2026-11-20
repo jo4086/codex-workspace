@@ -58,6 +58,20 @@ For a portfolio-oriented analysis of the project's goals, architecture, implemen
 6. Document important decisions and usage requirements.
 7. Integrate into the active Codex environment only when requested.
 
+## Global Agent Instructions
+
+The [global agent instructions template](./templates/global-AGENTS.md) is the source for shared instructions used across projects. The root [AGENTS.md](./AGENTS.md) applies to this repository only.
+
+After cloning, run the following from the repository root to copy the global instructions into `~/.agents/` and link them from `~/.codex/`:
+
+```bash
+mkdir -p ~/.agents ~/.codex
+cp -i ./templates/global-AGENTS.md ~/.agents/AGENTS.md
+ln -s ../.agents/AGENTS.md ~/.codex/AGENTS.md
+```
+
+If either destination already exists, inspect it before replacing it. `cp -i` prompts before overwriting the shared instructions; `ln -s` fails if `~/.codex/AGENTS.md` already exists. The link target is relative to `~/.codex/`, so Codex reads the copy in `~/.agents/`.
+
 ## Syncing Skills
 
 After validating a Skill, run [sync-skills.sh](./scripts/sync-skills.sh) from the repository root with the names to install or update:
