@@ -1,19 +1,20 @@
 ---
 name: workspace-unit-doc-manager
-description: Manage substantial workspace-unit work through REQ-owned requirements, specifications, phased plans, goals, reviews, architecture transitions, traceability, and focused context discovery.
+description: Start project, app, and package documentation under their own docs roots; manage substantial REQ-owned requirements, specifications, phased plans, goals, reviews, and architecture transitions.
 ---
 
 # Workspace Unit Doc Manager
 
 ## Purpose
 
-Manage the document lifecycle for substantial work owned by one workspace unit. Keep requirements, revision feedback, implementation detail, phased status, completion criteria, verification, and current architecture traceable without forcing one repository layout or migrating valid history.
+Manage the document lifecycle for substantial work owned by a project or one workspace unit. Keep requirements, revision feedback, implementation detail, phased status, completion criteria, verification, and current architecture traceable in the owner's documentation root without migrating valid history.
 
-Apply this Skill when work needs durable REQ ownership, acceptance criteria, multiple phases or document types, Phase status changes, architecture transitions, legacy document integration, or focused discovery of unit context. Do not require a REQ for a small independent correction when the unit's established flow is sufficient.
+Apply this Skill when starting durable project, app, or package documentation, or when work needs durable REQ ownership, acceptance criteria, multiple phases or document types, Phase status changes, architecture transitions, legacy document integration, or focused discovery of unit context. Do not require a REQ for a small independent correction when the owner's established flow is sufficient.
 
 ## Core Principles
 
 - Follow applicable root-to-target instructions and established unit conventions before applying default paths.
+- Start durable documentation for a new project in its `docs/`; start each newly documented monorepo application or package in its own `apps/<app>/docs/` or `packages/<package>/docs/`. Continue that owner's lifecycle there; preserve established documentation roots.
 - Select the document workflow per unit: preserve an established `REQUESTS` structure, and use `FEEDBACK` for meaningful revisions when establishing a new unit's documentation model. Do not mix the two structures in one unit.
 - Use stable unit-local REQ IDs and REQ-local Phase IDs.
 - Group new REQ-owned documents by document type and then REQ ID.
@@ -33,7 +34,7 @@ Start at [references/README.md](./references/README.md), then load only the guid
 
 ## Workflow
 
-1. Read applicable `AGENTS.md` files, identify the owning workspace unit and its documentation root, and select its existing or new document workflow.
+1. Read applicable `AGENTS.md` files, identify whether the project or an application or package owns the work, and use its established documentation root or start its own `docs/` root.
 2. Discover the relevant REQ through its index, then load only documents required by the task.
 3. Classify new features, revisions to an existing REQ, and small independent corrections without inventing scope.
 4. Apply the lifecycle rules for IDs, document triggers, links, evidence, and status ownership.
@@ -53,7 +54,7 @@ Apply multiple Skills only when the task spans their responsibilities. Keep deta
 
 ## Restrictions
 
-- Do not force an `apps/electron/docs/` layout; adapt the lifecycle to the owning unit's established documentation root.
+- Do not move established documentation into `docs/` without an authorized migration, or treat a project-level document as the lifecycle record for a newly documented app or package.
 - Do not create every possible REQ document or a FEEDBACK or REQUESTS folder without a meaningful record.
 - Do not introduce `FEEDBACK` into a unit already using the earlier `REQUESTS` model, or migrate its paths without an explicitly authorized migration scope.
 - Do not duplicate Phase status outside `ROADMAP.md`.

@@ -16,7 +16,7 @@ Map task responsibilities to the appropriate user-authored Skills.
 | `code-style` | Writing or modifying code, imports, types, or general module boundaries | Coding conventions |
 | `git-commit` | Drafting, revising, or reviewing Git commit messages | Commit message convention |
 | `agent-doc-writer` | Substantive writing, revision, structure, navigation, or link changes in project or Skill Markdown | General document structure and navigation |
-| `workspace-unit-doc-manager` | Managing workspace-unit REQ document meaning, identifiers, traceability, lifecycle, ROADMAP Phase status, architecture transitions, or focused session discovery | REQ-based document lifecycle and context discovery |
+| `workspace-unit-doc-manager` | Starting durable documentation for a project or monorepo app/package, or managing its REQ identifiers, traceability, lifecycle, ROADMAP Phase status, architecture transitions, or focused discovery | Owner-specific `docs/` placement, REQ lifecycle, and context discovery |
 | `skill-spec-designer` | Planning a new Skill or recording a numbered TBD change request for an existing Skill or Hook | TBD specification and request authoring |
 | `my-skill-creator` | Creating, extending, reviewing, or validating Skills, including implementing numbered TBD Skill requests | Skill authoring, validation, and validated request closure |
 

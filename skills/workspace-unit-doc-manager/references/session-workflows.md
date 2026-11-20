@@ -4,30 +4,31 @@
 
 Load only context needed for the requested operation:
 
-1. Locate candidate workspace units and read applicable root-to-target `AGENTS.md` files.
-2. Identify the owning unit and its established `REQUESTS` or new `FEEDBACK` model before selecting a REQ. Do not infer ownership or document model from another unit.
-3. Read the unit's requirement index and the selected requirement document.
-4. Follow direct links according to task type:
+1. Locate the project and candidate applications or packages, then read applicable root-to-target `AGENTS.md` files.
+2. Identify whether the project or a particular unit owns the work. Use its established documentation root, or its own `docs/` root when starting documentation; never substitute a project-level document for an app or package's lifecycle.
+3. Identify that owner's established `REQUESTS` or new `FEEDBACK` model before selecting a REQ. Do not infer its document model from another owner.
+4. Read the owner's requirement index and the selected requirement document when they exist. For first documentation, choose the owning `docs/` root and document type before creating them.
+5. Follow direct links according to task type:
    - requirements work: source FEEDBACK or REQUESTS under the selected model and affected acceptance criteria;
    - design or implementation work: relevant SPEC and current Phase plan;
    - execution tracking: current Phase and GOAL;
    - verification: current Phase, GOAL, REVIEW, and linked evidence;
    - architecture work: current `ARCHITECTURE.md` plus the proposal source.
-5. Read `ROADMAP.md` whenever Phase status or the current Phase matters.
-6. Expand to adjacent REQs or legacy documents only when a direct dependency, conflict, or missing fact requires them.
+6. Read `ROADMAP.md` whenever Phase status or the current Phase matters.
+7. Expand to adjacent REQs, other owners, or legacy documents only when a direct dependency, conflict, or missing fact requires them.
 
 Do not load every category, every REQ, or all historical Phase records by default.
 
 ## Classify New Work and Revisions
 
-1. Identify the unit's document model from its instructions and existing documents. Never switch an established `REQUESTS` unit to `FEEDBACK` as a side effect of handling work.
+1. Identify the project's or unit's documentation root and document model from its instructions and existing documents. Start new documentation in that owner's `docs/`; never switch an established `REQUESTS` unit to `FEEDBACK` as a side effect of handling work.
 2. Use a new REQ for a separate new feature with durable scope or acceptance criteria, multiple documents or phases, or a need for stable traceability, even when it is requested during work on another feature.
 3. Treat a change of direction, an inadequate or awkward result, or a clarifying example as a revision of the owning REQ when it changes that feature. In a new unit, preserve meaningful revisions in FEEDBACK; in an established unit, follow its existing REQUESTS convention. Do not record every conversational iteration.
 4. When a revision is agreed, update the authoritative REQUIREMENTS and affected SPEC, Phase plan, or GOAL. Keep source context linked where useful; do not leave the change only in its feedback or request record.
 5. Keep a small independent correction with no owning REQ in the unit's established flow when a REQ would add no useful lifecycle. Do not invent a FEEDBACK hierarchy for it.
 6. Preserve undecided product or technical choices as open choices. Do not write them as confirmed requirements.
-7. Confirm the owning unit, existing naming conventions, and used or retired IDs before assigning an ID.
-8. Create `REQUIREMENTS/<REQ-ID>.md` and update its index. Create other REQ-owned documents only when their trigger in [REQ Document Lifecycle](./document-lifecycle.md) applies.
+7. Confirm the owning project or unit, existing naming conventions, and used or retired IDs before assigning an ID. Keep cross-owner dependencies linked to their owners.
+8. When a new REQ is warranted, create `REQUIREMENTS/<REQ-ID>.md` and update its index. Create other REQ-owned documents only when their trigger in [REQ Document Lifecycle](./document-lifecycle.md) applies.
 
 ## Build a Phase Trace
 
@@ -62,7 +63,8 @@ Read every applicable `AGENTS.md` from repository root through the target docume
 
 ## Final Checks
 
-- Confirm document-type/REQ folder placement and unit-local stable IDs.
+- Confirm document-type/REQ folder placement and IDs stable within the owning project or unit.
+- Confirm the first and later durable documents of a newly documented project, application, or package use that owner's `docs/` root; preserve established roots without implicit migration.
 - Confirm full REQ-local Phase IDs where identity or status appears.
 - Confirm `ROADMAP.md` remains the only Phase status source.
 - Confirm optional documents exist only for their actual trigger.

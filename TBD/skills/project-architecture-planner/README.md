@@ -68,3 +68,7 @@ Implementation owner: `my-skill-creator`.
 
 - **Planning artifact:** A reviewed directory tree and implementation plan suffice for smaller scopes; substantial work or repository conventions may require a durable architecture document.
 - **Empty directories:** Show future roles in the reviewed plan. Create directories only when authorized implementation needs them; do not add placeholder files solely to represent future roles.
+
+## Change Requests
+
+- [x] **2026-11-21:** [REQUEST01 — Record initial architecture planning under `docs/`](./REQUEST01.md). The first durable project, application, or package plan belongs in its owning `docs/` structure. Implemented and validated; evidence is in the request.

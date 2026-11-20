@@ -2,18 +2,26 @@
 
 ## Scope and Shape
 
-Manage substantial work within a workspace unit: the smallest project area that owns its requirements, plans, implementation context, and verification records. Use the unit's established documentation root. `apps/electron/docs/` is one valid shape, not a required repository layout.
+Manage substantial work within a documentation owner: the project for project-wide work, or an application or package for its own requirements, plans, implementation context, and verification records. Determine that owner before choosing a document path.
 
-## Select the Unit's Document Model
+## Documentation Roots
 
-Before creating documents, inspect applicable instructions and the owning unit's existing documents and indexes. Select the workflow for that unit, not for the repository as a whole:
+Start durable documentation for a new project in `<project>/docs/`. In a monorepo, start each newly documented application in `apps/<app>/docs/` and each newly documented package in `packages/<package>/docs/`. Keep later requirements, specifications, plans, goals, reviews, and current architecture under the same owner's `docs/` root. Project-wide decisions belong in the project-level `docs/`; link cross-owner dependencies instead of using one root document as the app or package's lifecycle record.
 
-- **Established unit:** If the unit already follows the earlier document structure or an established `REQUESTS` flow, preserve that structure and its meanings. Continue to use `REQUESTS` for individual requests and change context as its existing guidance requires. Do not add `FEEDBACK` alongside it.
-- **New unit:** When establishing a unit's documentation model without an earlier `REQUESTS` convention, use `REQUIREMENTS` for current feature requirements and `FEEDBACK` for meaningful revisions to an existing feature or its requirements.
+The first durable planning or requirement document must use the owning `docs/` root. For substantial initial work with durable scope and acceptance criteria, create `docs/REQUIREMENTS/<REQ-ID>.md` and its requirement index. Add SPEC, Phase plans, GOAL, REVIEW, and other category documents only when their creation triggers apply. The root `README.md` remains an entry point and `AGENTS.md` remains an instruction file; neither replaces lifecycle documents under `docs/`. A conversational plan does not require a file.
 
-Keep one model within a unit. Do not rename, move, or migrate an established unit's documents or links merely to adopt `FEEDBACK`. Changing that unit's model needs a separately authorized migration scope. If instructions and documents disagree, resolve the conflict before changing the unit.
+Preserve an established project's or unit's existing documentation root and links. Do not move or rename its documents merely to adopt this rule; migration requires separate authorization.
 
-For each new substantial feature, assign a unit-local stable ID such as `REQ02`. Group owned documents by document type, then REQ. The example below shows the new unit model; an established unit retains its `REQUESTS` path and convention instead of adding `FEEDBACK`:
+## Select the Owner's Document Model
+
+Before creating documents, inspect applicable instructions and the owner's existing documents and indexes. Select the workflow for that owner, not for the repository as a whole:
+
+- **Established owner:** If the project or unit already follows the earlier document structure or an established `REQUESTS` flow, preserve that structure and its meanings. Continue to use `REQUESTS` for individual requests and change context as its existing guidance requires. Do not add `FEEDBACK` alongside it.
+- **New documentation owner:** When establishing the project or unit's documentation model without an earlier `REQUESTS` convention, use `REQUIREMENTS` for current feature requirements and `FEEDBACK` for meaningful revisions to an existing feature or its requirements.
+
+Keep one model within each owner. Do not rename, move, or migrate an established owner's documents or links merely to adopt `FEEDBACK`. Changing that owner's model needs a separately authorized migration scope. If instructions and documents disagree, resolve the conflict before changing the owner.
+
+For each new substantial feature, assign a stable ID local to its project or unit, such as `REQ02`. Group owned documents by document type, then REQ. The example below shows the new document model; an established owner retains its `REQUESTS` path and convention instead of adding `FEEDBACK`:
 
 ```text
 <unit-docs>/
@@ -38,7 +46,7 @@ For each new substantial feature, assign a unit-local stable ID such as `REQ02`.
 
 Use `DOCUMENT-TYPE/REQ-ID/` even when that REQ currently has one document of the type. Do not repeat the REQ ID in child filenames. This is the default for new REQ-owned documents; do not flatten them to names such as `REQ02-Phase01.md`.
 
-The tree shows ownership, not mandatory files. Adapt the documentation root and existing category names to the unit. Do not impose this example on unrelated units or create empty directories.
+The tree shows ownership, not mandatory files. For new documentation, `<unit-docs>` means the owning project's, application's, or package's `docs/` root. Preserve established category names and roots; do not create empty directories.
 
 ## Document Ownership
 
@@ -62,7 +70,7 @@ Keep proposed architecture in REQUIREMENTS, SPEC, or a clearly labeled proposal.
 
 ## Identifiers
 
-1. Find all used and retired IDs in the owning unit before assigning the next `REQ<number>` ID.
+1. Find all used and retired IDs in the owning project or unit before assigning the next `REQ<number>` ID.
 2. Never reuse or renumber a REQ ID. Preserve it when the feature name changes.
 3. Record split, replacement, or retirement relationships in the original requirement and update direct links.
 4. Assign Phase numbers inside each REQ. Write the full identifier as `REQ02-Phase01` wherever Phase identity or status appears.

@@ -103,3 +103,4 @@ apps/electron/docs/
 ## Change Requests
 
 - [x] **2026-11-20:** [REQUEST01 — Separate new feature requirements from revision feedback](./REQUEST01.md). New units use `FEEDBACK` for meaningful revisions; units using the earlier `REQUESTS` structure retain it. Implemented and validated; evidence is in the request.
+- [x] **2026-11-21:** [REQUEST02 — Require `docs/` from the first project or Workspace Unit document](./REQUEST02.md). New projects and newly documented `apps/*` and `packages/*` units start and continue their own structured `docs/` documentation. Implemented and validated; evidence is in the request.

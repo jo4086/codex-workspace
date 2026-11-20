@@ -54,7 +54,7 @@ If no relevant Skill is available, proceed using applicable project instructions
 - `electron-project-structure` owns Electron process directories, IPC placement, and Main, Preload, and Renderer boundaries.
 - `code-style` owns coding conventions, imports, types, and module boundaries.
 - `agent-doc-writer` owns substantive Markdown writing, revision, structure, and navigation.
-- `workspace-unit-doc-manager` owns workspace-unit REQ document meaning, identifiers, traceability, lifecycle, ROADMAP Phase status, and focused context discovery.
+- `workspace-unit-doc-manager` owns initial `docs/` placement for projects, apps, and packages, plus their REQ document meaning, identifiers, traceability, lifecycle, ROADMAP Phase status, and focused context discovery.
 - `skill-spec-designer` owns new TBD Skill specifications and numbered change requests for existing Skills or Hooks.
 - `my-skill-creator` owns Skill creation, extension, maintenance, validation, and closure of validated numbered Skill requests.
 - For an existing component, route TBD planning to `skill-spec-designer` and Skill implementation to `my-skill-creator`. Apply both when the user requests both stages; Hook implementation requires its own owner.

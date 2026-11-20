@@ -10,7 +10,7 @@ Use this process when implementation first enters an application, package, servi
 2. Map incoming and outgoing interactions before choosing folders: callers, dependencies, data flow, shared contracts, external services, and ownership of each connection.
 3. Separate the child area's meaningful responsibilities, including essential roles implied by the requested work. Present new roles as proposals and discuss consequential choices with the user.
 4. Draw a role-based internal tree and explain which work belongs in each directory. Recurse into a subarea only when it has multiple meaningful responsibilities or an unresolved boundary.
-5. Use the reviewed tree for implementation and file placement. If implementation reveals a real missing responsibility or changed interaction, revisit the affected level and update its plan.
+5. Use the reviewed tree for implementation and file placement. When first saving a durable plan for a monorepo application or package, use `apps/<app>/docs/` or `packages/<package>/docs/`; keep later documents under that same owner. Keep project-wide decisions in the project-level `docs/` and link dependencies across owners. Preserve established document paths unless migration is separately authorized. If implementation reveals a real missing responsibility or changed interaction, revisit the affected level and update its plan.
 
 ## Backend Example
 
@@ -21,3 +21,4 @@ For new work in `apps/<app>/backend`, first identify the backend's callers, its 
 - Each role has a clear owner and the proposed tree matches the parent's architecture.
 - Cross-boundary dependencies and contracts have an owner.
 - The area is decomposed enough to avoid a catch-all, without speculative folders or placeholder files.
+- A new application's or package's durable plan and later lifecycle documents belong to its own `docs/` root, not a single project-level plan. Conversation-only sketches do not create placeholder directories.

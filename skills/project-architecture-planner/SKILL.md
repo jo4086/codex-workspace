@@ -16,6 +16,7 @@ Plan architecture before implementing a new project or entering an application, 
 - Proactively surface essential roles implied by the work, explain them, and discuss consequential choices with the user. Treat proposals as proposals until reviewed.
 - Give each agreed role a clear owner. Decompose meaningful child responsibilities recursively, without speculative layers or catch-all directories.
 - Use the reviewed structure to guide implementation and revisit it when responsibilities or interactions change.
+- Save the first durable project plan under the project's `docs/`; save a newly documented monorepo app's or package's first plan under its own `docs/`. Keep later documents with their owner and preserve established paths.
 
 ## Reference Routing
 
@@ -26,7 +27,7 @@ Start at [references/README.md](./references/README.md). Read [new project plann
 1. Identify the planning level and inspect current ownership, constraints, and conventions.
 2. Map responsibilities, boundaries, dependencies, data flow, and shared contracts at that level.
 3. Present proposed roles and a directory tree for user review; resolve consequential choices before implementing the affected structure.
-4. Record the result at a level appropriate to the work and existing documentation practice. A reviewed tree and implementation plan suffice for a small scope; use durable architecture documents when substantial work or repository conventions require them.
+4. Record the reviewed result at a level appropriate to the work. A conversational tree can suffice for a small scope; once saved as a durable document, place it in the owning project's, application's, or package's `docs/` root and follow the document lifecycle for substantial work.
 5. Create directories as authorized work needs them, place code with its agreed owner, and check that roles and interactions remain accounted for.
 
 ## Cross-Skill Coordination
