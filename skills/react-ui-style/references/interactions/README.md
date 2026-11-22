@@ -1,22 +1,8 @@
-# Interaction Patterns
+# Interactions
 
-Guidelines for consistent user interactions in React interfaces.
-
-Read only the documents relevant to the current task.
-
-## Document Index
-
-| Document                         | Scope                                     | Read When                                          |
-| -------------------------------- | ----------------------------------------- | -------------------------------------------------- |
-| [editing.md](./editing.md)       | Inline editing, form editing, save/cancel | Implementing or modifying editable UI              |
-| [navigation.md](./navigation.md) | Navigation, transitions, expand/collapse  | Implementing navigation or disclosure interactions |
-| [feedback.md](./feedback.md)     | Loading, success, errors, confirmation    | Implementing status feedback or confirmations      |
-| [image-lightbox-gallery.md](./image-lightbox-gallery.md) | Content-image enlargement, gallery navigation, thumbnails, zoom, and dismissal | Images need detail inspection or browsing within one content item |
-
-## General Principles
-
-- Preserve existing functionality and project conventions.
-- Maintain consistent interaction behavior.
-- Prevent unnecessary layout shifts.
-- Support keyboard accessibility.
-- Avoid unrelated UI changes.
+| Reference | Read when |
+| --- | --- |
+| [editing.md](./editing.md) | Editing can discard changes or needs save and cancel behavior. |
+| [navigation.md](./navigation.md) | A task changes navigation or a persistent disclosure convention. |
+| [feedback.md](./feedback.md) | A task defines loading, error, success, or confirmation behavior. |
+| [image-lightbox-gallery.md](./image-lightbox-gallery.md) | Content images need enlargement or browsing within one item. |
