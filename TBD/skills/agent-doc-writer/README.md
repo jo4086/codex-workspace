@@ -79,3 +79,7 @@ The future Skill is ready when it can:
 ## Open Decisions
 
 None required to begin implementation. The exact reference-file layout should follow the smallest structure that supports the distinct `AGENTS.md`, README, and navigation guidance during implementation.
+
+## Change Requests
+
+- [x] **2026-11-22** [REQUEST01 — Add important and cancelled checklist states](./REQUEST01.md). Extend the shared progress checklist convention with `- [!]` and `- [c]`. Implemented and validated. See the request for evidence.

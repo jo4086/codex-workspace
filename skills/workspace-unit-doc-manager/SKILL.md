@@ -1,15 +1,15 @@
 ---
 name: workspace-unit-doc-manager
-description: Start project, app, and package documentation under their own docs roots; manage substantial REQ-owned requirements, specifications, phased plans, goals, reviews, and architecture transitions.
+description: Plan project, app, or package implementation in ROADMAP and GOAL, including small corrections. Handle user submissions in docs/user/ and manage owner-specific docs and REQ lifecycles.
 ---
 
 # Workspace Unit Doc Manager
 
 ## Purpose
 
-Manage the document lifecycle for substantial work owned by a project or one workspace unit. Keep requirements, revision feedback, implementation detail, phased status, completion criteria, verification, and current architecture traceable in the owner's documentation root without migrating valid history.
+Manage the document lifecycle for work owned by a project or one workspace unit. Keep requirements, revision feedback, implementation detail, phased status, completion criteria, verification, and current architecture traceable in the owner's documentation root without migrating valid history.
 
-Apply this Skill when starting durable project, app, or package documentation, or when work needs durable REQ ownership, acceptance criteria, multiple phases or document types, Phase status changes, architecture transitions, legacy document integration, or focused discovery of unit context. Do not require a REQ for a small independent correction when the owner's established flow is sufficient.
+Apply this Skill to project or Workspace Unit implementation requests from chat or `docs/user/`, including small corrections and requests that omit document names. Also apply it when starting durable documentation or managing REQ ownership, acceptance criteria, phases, architecture transitions, legacy integration, or focused discovery. Questions, read-only investigations, and planning-only requests can proceed directly.
 
 ## Core Principles
 
@@ -19,7 +19,7 @@ Apply this Skill when starting durable project, app, or package documentation, o
 - Use stable unit-local REQ IDs and REQ-local Phase IDs.
 - Group new REQ-owned documents by document type and then REQ ID.
 - Keep `ROADMAP.md` as the sole source of Phase status.
-- Create optional FEEDBACK or legacy REQUESTS records, SPEC, detailed ROADMAP, GOAL, and REVIEW documents only when their content exists or separate ownership improves clarity.
+- Ensure the owner's ROADMAP and applicable GOAL cover the requested work before editing implementation files. Create FEEDBACK or legacy REQUESTS records, SPEC, detailed Phase plans, and REVIEW only when their lifecycle triggers apply.
 - Keep current implemented architecture separate from proposals.
 - Check completion or verification items only when supporting evidence exists.
 - Preserve legacy paths, links, anchors, IDs, status, and evidence unless migration is explicitly authorized.
@@ -31,14 +31,15 @@ Start at [references/README.md](./references/README.md), then load only the guid
 
 - Read [REQ Document Lifecycle](./references/document-lifecycle.md) for document-model selection, placement, ownership, creation triggers, identifiers, status, evidence, links, and legacy preservation.
 - Read [Session Workflows](./references/session-workflows.md) for selective discovery, new-work and revision classification, Phase tracing and completion, target-instruction conflicts, and final checks.
+- Read [User-Written Requests](./references/user-request-intake.md) when a user submits Markdown under `docs/user/`.
 
 ## Workflow
 
 1. Read applicable `AGENTS.md` files, identify whether the project or an application or package owns the work, and use its established documentation root or start its own `docs/` root.
-2. Discover the relevant REQ through its index, then load only documents required by the task.
+2. Resolve any user submission through its source indexes. Find the relevant REQ through the requirements index and load the documents required by the task.
 3. Classify new features, revisions to an existing REQ, and small independent corrections without inventing scope.
-4. Apply the lifecycle rules for IDs, document triggers, links, evidence, and status ownership.
-5. Preserve open choices and stop on consequential instruction, scope, ownership, permission, or compatibility conflicts.
+4. Preserve open choices and resolve consequential instruction, scope, ownership, permission, or compatibility conflicts before edits they affect. Apply the lifecycle rules for IDs, document triggers, links, evidence, and status ownership.
+5. For implementation requests, verify or prepare the ROADMAP and GOAL before implementation edits. For a broad `docs/user/` submission, end the task after plan preparation and wait for the user's direction to implement.
 6. Verify direct links, affected indexes, ID consistency, checklist evidence, Phase status, architecture truth, and legacy preservation.
 7. Report changed documents, checks, unresolved choices, conflicts, and unverified conditions.
 

@@ -28,6 +28,7 @@
 - Shared Skills are located under `~/.agents/skills/`.
 - Codex-specific configurations, Hooks, and runtime resources remain under `~/.codex/`.
 - Use `skill-router` to identify applicable Skills when available.
+- Route project and Workspace Unit implementation requests to `workspace-unit-doc-manager` before implementation, including small corrections and requests that omit planning document names.
 - Apply relevant Skills even when the user does not explicitly name them.
 - Follow each selected Skill's `SKILL.md` and task-relevant references.
 - Apply multiple Skills when their responsibilities overlap.

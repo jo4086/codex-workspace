@@ -104,3 +104,5 @@ apps/electron/docs/
 
 - [x] **2026-11-20:** [REQUEST01 — Separate new feature requirements from revision feedback](./REQUEST01.md). New units use `FEEDBACK` for meaningful revisions; units using the earlier `REQUESTS` structure retain it. Implemented and validated; evidence is in the request.
 - [x] **2026-11-21:** [REQUEST02 — Require `docs/` from the first project or Workspace Unit document](./REQUEST02.md). New projects and newly documented `apps/*` and `packages/*` units start and continue their own structured `docs/` documentation. Implemented and validated; evidence is in the request.
+- [x] **2026-11-22** [REQUEST03 — Accept user-written requests from `docs/user/`](./REQUEST03.md). Define the round and feature indexes, and pause broad requests after preparing their lifecycle documents. Implemented and validated. See the request for evidence.
+- [x] **2026-11-22** [REQUEST04 — Record ROADMAP and GOAL before implementation](./REQUEST04.md). Require documented planning before implementation even when the user omits document names. Implemented and validated. See the request for evidence.

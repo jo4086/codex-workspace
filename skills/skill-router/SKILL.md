@@ -54,11 +54,11 @@ If no relevant Skill is available, proceed using applicable project instructions
 - `electron-project-structure` owns Electron process directories, IPC placement, and Main, Preload, and Renderer boundaries.
 - `code-style` owns coding conventions, imports, types, and module boundaries.
 - `agent-doc-writer` owns substantive Markdown writing, revision, structure, and navigation.
-- `workspace-unit-doc-manager` owns initial `docs/` placement for projects, apps, and packages, plus their REQ document meaning, identifiers, traceability, lifecycle, ROADMAP Phase status, and focused context discovery.
+- Route project and Workspace Unit implementation requests to `workspace-unit-doc-manager` before implementation, including small corrections and requests that omit document names. It owns ROADMAP and GOAL planning, `docs/user/` intake, and owner-specific REQ lifecycles.
 - `skill-spec-designer` owns new TBD Skill specifications and numbered change requests for existing Skills or Hooks.
 - `my-skill-creator` owns Skill creation, extension, maintenance, validation, and closure of validated numbered Skill requests.
 - For an existing component, route TBD planning to `skill-spec-designer` and Skill implementation to `my-skill-creator`. Apply both when the user requests both stages; Hook implementation requires its own owner.
-- Apply both documentation Skills only when REQ-owned work also needs substantive Markdown writing or navigation; a Phase status-only change uses `workspace-unit-doc-manager` alone.
+- Apply both documentation Skills when lifecycle work also needs substantive Markdown writing or navigation. A Phase status-only change uses `workspace-unit-doc-manager` alone.
 - For route-aware visual layouts, apply both `react-router` and `react-ui-style` when appropriate.
 - When work changes both React Renderer internals and Electron process organization, apply both project-structure Skills. Use only the relevant one when the change stays within its ownership.
 - Apply `code-style` alongside specialized Skills when coding conventions are relevant.

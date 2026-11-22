@@ -8,7 +8,7 @@ Manage substantial work within a documentation owner: the project for project-wi
 
 Start durable documentation for a new project in `<project>/docs/`. In a monorepo, start each newly documented application in `apps/<app>/docs/` and each newly documented package in `packages/<package>/docs/`. Keep later requirements, specifications, plans, goals, reviews, and current architecture under the same owner's `docs/` root. Project-wide decisions belong in the project-level `docs/`; link cross-owner dependencies instead of using one root document as the app or package's lifecycle record.
 
-The first durable planning or requirement document must use the owning `docs/` root. For substantial initial work with durable scope and acceptance criteria, create `docs/REQUIREMENTS/<REQ-ID>.md` and its requirement index. Add SPEC, Phase plans, GOAL, REVIEW, and other category documents only when their creation triggers apply. The root `README.md` remains an entry point and `AGENTS.md` remains an instruction file; neither replaces lifecycle documents under `docs/`. A conversational plan does not require a file.
+The first durable planning or requirement document must use the owning `docs/` root. For substantial initial work with durable scope and acceptance criteria, create `docs/REQUIREMENTS/<REQ-ID>.md` and its requirement index. Use the creation triggers below for the other documents. The root `README.md` remains an entry point and `AGENTS.md` remains an instruction file.
 
 Preserve an established project's or unit's existing documentation root and links. Do not move or rename its documents merely to adopt this rule; migration requires separate authorization.
 
@@ -53,12 +53,13 @@ The tree shows ownership, not mandatory files. For new documentation, `<unit-doc
 | Location | Owned information | Creation trigger |
 | --- | --- | --- |
 | `REQUIREMENTS/REQ02.md` | User problem, confirmed requirements, scope, constraints, and verifiable acceptance criteria | Substantial feature needs durable scope, acceptance, or phased coordination |
+| [`docs/user/`](./user-request-intake.md) | Original user-written submissions and their round and feature indexes | The user submits Markdown as the request |
 | `FEEDBACK/REQ02/<topic>.md` in a new unit | Meaningful revision feedback, its examples, rationale, and handling history for an existing feature or its requirements | The revision materially affects documented direction or criteria, or preserving its context helps later work |
 | `REQUESTS/REQ02/<topic>.md` in an established unit | Individual request, question, change input, and handling history under that unit's earlier model | The unit already uses `REQUESTS` and preserving an individual record helps |
 | `SPEC/REQ02/<feature-area>.md` | Behavior, UI, data, or other implementation-facing rules | Detail is needed beyond acceptance criteria |
-| `ROADMAP.md` | Every REQ Phase ID, order, current status, and detailed-plan links | A REQ has phased work |
+| `ROADMAP.md` | Implementation scope and sequence, Phase IDs and status, and links to detailed plans and GOAL | The requested work includes implementation |
 | `ROADMAP/REQ02/Phase01.md` | Phase scope, prerequisites, target SPEC, and sequence | Phase planning no longer fits clearly in `ROADMAP.md` |
-| `GOAL/REQ02/Phase01.md` | Outputs and completion conditions agreed before execution | Separate execution criteria improve clarity |
+| Applicable GOAL document, such as `GOAL/REQ02/Phase01.md` | Deliverables and verifiable completion conditions | The requested work includes implementation |
 | `REVIEW/REQ02/Phase01.md` | Verification against GOAL, evidence, failures, and remaining work | Verification results exist |
 | `ARCHITECTURE.md` | Current implemented unit structure | Verified implementation changes current structure |
 
@@ -80,7 +81,7 @@ Keep proposed architecture in REQUIREMENTS, SPEC, or a clearly labeled proposal.
 
 `ROADMAP.md` is the sole source of Phase status. Detailed ROADMAP, GOAL, and REVIEW documents may explain progress and evidence but must not define a competing status. Update `ROADMAP.md` only after the evidence supports the status transition.
 
-Draft actionable GOAL completion conditions and REVIEW verification items as unchecked task items. Change `- [ ]` to `- [x]` only after the stated condition is met and supporting evidence is recorded or directly linked nearby. Leave failed, blocked, partial, and unverified items unchecked. Preserve existing checked states unless their evidence changes.
+Use the [shared checklist states](../../agent-doc-writer/references/writing.md#progress-checklists) for actionable GOAL conditions and REVIEW verification items. Start those items pending. Check each only after the stated condition is met and supporting evidence is recorded or directly linked nearby.
 
 ## Links and Indexes
 

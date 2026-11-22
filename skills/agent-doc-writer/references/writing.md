@@ -20,8 +20,17 @@ Apply these common checks when creating, revising, or splitting project or Skill
 ## Progress Checklists
 
 - In GOAL, REQUEST, REVIEW, and similar documents that track work, decisions, acceptance, or verification over time, write each actionable or verifiable item as a Markdown task list item (`- [ ]`) by default. Apply the same rule to Phase completion conditions kept in a ROADMAP. Use a plain bullet or paragraph for context, rationale, evidence, and other text that has no meaningful completion state.
-- Draft the checklist before the work or review begins when the items are known. Leave planned items unchecked; do not mark an item complete based on intent, a partial result, or an unverified claim.
-- As work proceeds, change an item to `- [x]` only after its stated completion condition is met and checked. Record or link the supporting result near the item, especially for acceptance and REVIEW findings. Keep unfinished items unchecked and describe blockers or follow-up without treating them as complete.
+- Draft the checklist before the work or review begins when the items are known. Follow any document-specific format.
+
+| Marker | State | Use |
+| --- | --- | --- |
+| `- [ ]` | Unchecked | Ordinary pending work. |
+| `- [!]` | Important | Pending priority work or a mandatory check. |
+| `- [x]` | Checked | Work that meets its completion condition and has been verified. |
+| `- [c]` | Cancelled | Work explicitly removed from scope by a decision. |
+
+- Move a pending item to checked only after verifying its completion condition. Record or link evidence near the item, especially for acceptance and REVIEW findings. Keep blocked, partial, or unverified work pending unless a decision cancels it. Record or link the decision for cancelled work and exclude cancelled items from completed work.
+- GitHub Markdown displays `[!]` and `[c]` as literal text in list items.
 - Preserve existing checked states when revising a document unless the underlying evidence changes. A checklist tracks its own items; it does not replace an authoritative status field or a domain Skill's rules for when a document is created.
 
 ## Review

@@ -14,7 +14,7 @@ Load only context needed for the requested operation:
    - execution tracking: current Phase and GOAL;
    - verification: current Phase, GOAL, REVIEW, and linked evidence;
    - architecture work: current `ARCHITECTURE.md` plus the proposal source.
-6. Read `ROADMAP.md` whenever Phase status or the current Phase matters.
+6. Read `ROADMAP.md` for implementation work or whenever Phase status or the current Phase matters. For implementation, also read the applicable GOAL if it exists.
 7. Expand to adjacent REQs, other owners, or legacy documents only when a direct dependency, conflict, or missing fact requires them.
 
 Do not load every category, every REQ, or all historical Phase records by default.
@@ -30,6 +30,13 @@ Do not load every category, every REQ, or all historical Phase records by defaul
 7. Confirm the owning project or unit, existing naming conventions, and used or retired IDs before assigning an ID. Keep cross-owner dependencies linked to their owners.
 8. When a new REQ is warranted, create `REQUIREMENTS/<REQ-ID>.md` and update its index. Create other REQ-owned documents only when their trigger in [REQ Document Lifecycle](./document-lifecycle.md) applies.
 
+## Plan Before Implementation
+
+1. Inspect the request, ownership, and affected context. Apply this workflow to implementation work from chat or [user-written requests](./user-request-intake.md), including small corrections. Handle questions, read-only investigations, and planning-only requests directly.
+2. Check the owner's `ROADMAP.md` for scope and sequence and the applicable GOAL for deliverables and verifiable completion conditions. Reuse existing entries when they cover the requested work. If either record is missing or the scope changes, write or update the planning documents first, before editing implementation files. A chat summary or internal plan leaves the written planning prerequisite unmet.
+3. For a small correction without a REQ, link a short ROADMAP entry to a brief GOAL in the owner's existing layout. If there is no GOAL convention, use `GOAL/<topic>.md` under the owner's documentation root. Use the owner's applicable Phase and GOAL paths for REQ-owned work. Add a new REQ, detailed Phase plan, or SPEC only when its lifecycle trigger applies. Start new completion conditions unchecked.
+4. Once the records are ready, proceed with clearly scoped small work and its verification in the same task. For other chat requests, proceed according to the user's authorized scope. For a broad submission under `docs/user/`, finish the intake with planning documents and wait for the user's direction to implement.
+
 ## Build a Phase Trace
 
 For a representative `REQ02-Phase01`:
@@ -38,13 +45,13 @@ For a representative `REQ02-Phase01`:
 2. Link `SPEC/REQ02/<feature-area>.md` to the acceptance criteria it details.
 3. Add `REQ02-Phase01` and its current status to `ROADMAP.md`; link a detailed plan only if one is needed.
 4. If detailed planning is needed, link `ROADMAP/REQ02/Phase01.md` to the requirement, target SPEC, and ROADMAP entry.
-5. If separate completion criteria help, link `GOAL/REQ02/Phase01.md` to the Phase entry or plan and relevant SPEC; start conditions unchecked.
+5. Link `GOAL/REQ02/Phase01.md` to the Phase entry or plan and any relevant SPEC. Prepare its completion conditions before implementation and start them unchecked.
 6. When verification results exist, link `REVIEW/REQ02/Phase01.md` to the GOAL when present and to evidence; check only verified items.
 7. Confirm every existing direct link resolves and all documents use the same REQ and Phase IDs.
 
 ## Advance or Complete a Phase
 
-1. Compare work with acceptance criteria and any separate GOAL conditions.
+1. Compare work with acceptance criteria and the applicable GOAL conditions.
 2. Record commands, artifacts, observations, or other evidence in REVIEW or link them directly.
 3. Check only conditions proven by that evidence. Keep failures and unknowns unchecked.
 4. Record blockers and remaining work without converting them into completion claims.
@@ -67,6 +74,7 @@ Read every applicable `AGENTS.md` from repository root through the target docume
 - Confirm the first and later durable documents of a newly documented project, application, or package use that owner's `docs/` root; preserve established roots without implicit migration.
 - Confirm full REQ-local Phase IDs where identity or status appears.
 - Confirm `ROADMAP.md` remains the only Phase status source.
+- Confirm ROADMAP and GOAL covered the requested scope before any implementation edits. For broad user-written submissions at intake, confirm the round remains pending and only documentation was prepared.
 - Confirm optional documents exist only for their actual trigger.
 - Confirm the selected document model matches the unit's instructions and existing documents; do not mix FEEDBACK and REQUESTS or migrate legacy paths without authorization.
 - Confirm GOAL and REVIEW checked items have nearby evidence.
