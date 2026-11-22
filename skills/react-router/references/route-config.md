@@ -4,7 +4,7 @@
 
 Prefer `RouteObject[]` for centralized route definitions in Declarative Mode.
 
-**Example path:** `src/router/config.tsx`
+**Example path:** `src/routes/config.tsx`
 
 ```tsx
 import type { RouteObject } from "react-router";
@@ -31,7 +31,7 @@ The example paths, imports, and components are illustrative.
 
 ## 2. Route Rendering
 
-**Example path:** `src/router/index.tsx`
+**Example path:** `src/routes/index.tsx`
 
 ```tsx
 import { useRoutes } from "react-router";

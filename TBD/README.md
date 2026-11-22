@@ -25,6 +25,7 @@ Each idea may use its own subdirectory while it is being developed.
 - [my-skill-creator](./skills/my-skill-creator/README.md) — Original plan; [implemented Skill](../skills/my-skill-creator/SKILL.md).
 - [project-architecture-planner](./skills/project-architecture-planner/README.md) — Original plan for project-wide and recursive area architecture planning; [implemented Skill](../skills/project-architecture-planner/SKILL.md).
 - [project-structures](./skills/project-structures/README.md) — Original plans; implemented [React Skill](../skills/react-project-structure/SKILL.md) and [Electron Skill](../skills/electron-project-structure/SKILL.md).
+- [react-router](./skills/react-router/README.md) — Planned routing-structure changes for the implemented [React Router Skill](../skills/react-router/SKILL.md), coordinated with React project structure guidance.
 - [react-ui-style](./skills/react-ui-style/README.md) — Planned additions to the implemented [React UI Style Skill](../skills/react-ui-style/SKILL.md).
 - [skill-spec-designer](./skills/skill-spec-designer/README.md) — Original plan; [implemented Skill](../skills/skill-spec-designer/SKILL.md).
 - [workspace-unit-doc-manager](./skills/workspace-unit-doc-manager/README.md) — REQ별 문서 구조 개정안; [이전 검토안](./skills/workspace-unit-doc-manager/README.v1.md), [현재 구현 Skill](../skills/workspace-unit-doc-manager/SKILL.md).

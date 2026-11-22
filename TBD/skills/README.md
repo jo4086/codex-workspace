@@ -7,7 +7,8 @@ This index lists every Skill plan in this directory. A checked box means all cur
 - [x] [git-commit](./git-commit/README.md) — Original plan implemented and validated.
 - [x] [my-skill-creator](./my-skill-creator/README.md) — Recorded requests implemented and validated.
 - [x] [project-architecture-planner](./project-architecture-planner/README.md) — Original plan and [initial `docs/` planning request](./project-architecture-planner/REQUEST01.md) implemented and validated.
-- [x] [project-structures](./project-structures/README.md) — React and Electron structure Skills implemented.
+- [x] [project-structures](./project-structures/README.md) — React and Electron structure Skills implemented, including the coordinated routes-directory and entry-only `App.tsx` request.
+- [x] [react-router](./react-router/README.md) — The dedicated routes-directory, entry-only `App.tsx`, and first URL-design review request is implemented and validated.
 - [x] [react-ui-style](./react-ui-style/README.md) — Recorded requests implemented and validated.
 - [x] [skill-spec-designer](./skill-spec-designer/README.md) — Recorded requests implemented and validated.
 - [x] [workspace-unit-doc-manager](./workspace-unit-doc-manager/README.md) — [Feature folders and direct checklist indexing for user submissions](./workspace-unit-doc-manager/REQUEST05.md) implemented and validated. Earlier requests are complete.

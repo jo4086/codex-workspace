@@ -30,3 +30,7 @@ Create two coordinated Skills using `my-skill-creator`:
 - [Common requirements](./common.md)
 - [React requirements](./react.md)
 - [Electron requirements](./electron.md)
+
+## Change Requests
+
+- [x] **2026-11-23:** [Dedicated routes directory, entry-only `App.tsx`, and first URL-design review](../react-router/REQUEST01.md). Coordinated with the existing `react-router` Skill; implemented and validated with evidence in the request.

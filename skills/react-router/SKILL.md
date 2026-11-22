@@ -18,8 +18,9 @@ Support Web and Electron environments while respecting existing project conventi
 ## 2. Core Principles
 
 - Respect existing routing architecture and project conventions.
-- Prefer centralized route configuration for new Declarative Mode projects.
+- Use `src/routes/` for route composition in new Declarative Mode projects.
 - Separate route definitions, route rendering, and application initialization.
+- Keep `App.tsx` limited to importing and returning the root route entry component.
 - Keep route definitions independent of the execution environment where practical.
 - Prefer nested routes and shared layouts when appropriate.
 - Avoid unnecessary routing abstractions and complexity.
@@ -51,11 +52,12 @@ Support Web and Electron environments while respecting existing project conventi
 For React Router architecture, configuration, or navigation tasks:
 
 1. Read `references/README.md`.
-2. Identify the relevant routing concern.
-3. Follow the reference index to locate applicable guidelines.
-4. Read only the documents required for the task.
-5. Combine references when the task spans multiple routing concerns.
-6. Avoid loading unrelated references.
+2. When a starter has no router and list/detail URLs are being designed for the first time, read `references/architecture.md` before choosing whether or how to introduce routing.
+3. Identify the relevant routing concern.
+4. Follow the reference index to locate applicable guidelines.
+5. Read only the documents required for the task.
+6. Combine references when the task spans multiple routing concerns.
+7. Avoid loading unrelated references.
 
 ## 5. Implementation Workflow
 

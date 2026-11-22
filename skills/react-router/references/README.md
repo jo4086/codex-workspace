@@ -6,7 +6,7 @@ Reference index for React Router architecture, route configuration, navigation, 
 
 | Document                             | Responsibility                                                  | Read When                                      |
 | ------------------------------------ | --------------------------------------------------------------- | ---------------------------------------------- |
-| [architecture.md](./architecture.md) | Directory structure, file responsibilities, router architecture | Creating or restructuring routing architecture |
+| [architecture.md](./architecture.md) | Directory structure, file responsibilities, router architecture | Creating or restructuring routing architecture; first designing list/detail URLs in a router-free starter |
 | [route-config.md](./route-config.md) | RouteObject, nested routes, layouts, route registration         | Adding or modifying routes                     |
 | [navigation.md](./navigation.md)     | Links, programmatic navigation, navigation state                | Implementing navigation behavior               |
 | [environments.md](./environments.md) | Web, Electron, testing, router selection                        | Selecting or configuring router providers      |
@@ -20,9 +20,11 @@ Reference index for React Router architecture, route configuration, navigation, 
 4. Respect the installed React Router version and routing mode.
 5. Preserve existing project conventions unless explicitly instructed otherwise.
 
+When a starter has no existing router and list/detail URLs are being designed for the first time, read [architecture.md](./architecture.md) before choosing whether or how to introduce routing.
+
 ## General Principles
 
-- Prefer centralized route configuration for new Declarative Mode projects.
+- Use `src/routes/` for route composition in new Declarative Mode projects.
 - Separate route definitions from route rendering and application setup.
 - Keep route configuration independent of the runtime environment where possible.
 - Avoid unnecessary routing abstractions and dependencies.

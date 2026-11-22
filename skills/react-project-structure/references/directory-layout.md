@@ -10,11 +10,12 @@ src/
 ├── hooks/        # Hooks shared across features
 ├── layouts/      # Reusable page layouts
 ├── pages/        # Route-level page composition
-├── routes/       # Route configuration
+├── routes/       # Route definitions and root route rendering
 ├── styles/       # Global styles and themes
 ├── types/        # Cross-feature types
 ├── utils/        # Cross-feature utilities
-└── main.tsx      # Entry point
+├── App.tsx       # Imports and returns the root route entry only
+└── main.tsx      # Bootstrap and application-level provider composition
 ```
 
-Create a directory only when existing code needs it. Keep a small app flat when that is clearer. Place root providers and startup composition near the entrypoint; place feature behavior with its feature. Distinguish route-level pages, reusable layouts, and feature implementation by their actual roles. `react-router` owns route configuration and navigation details; `react-ui-style` owns visual layout and styling.
+Create a directory only when existing code needs it. Keep a small app flat when that is clearer. When routes are configured, place their definitions and root rendering in `src/routes/`; do not place route declarations in `App.tsx`. Keep `App.tsx` to importing and returning the root route entry component, with no providers, layouts, feature logic, business logic, or substantial JSX. Place root providers and startup composition near the entrypoint; place feature behavior with its feature. Distinguish route-level pages, reusable layouts, and feature implementation by their actual roles. `react-router` owns route configuration and navigation details; `react-ui-style` owns visual layout and styling.
