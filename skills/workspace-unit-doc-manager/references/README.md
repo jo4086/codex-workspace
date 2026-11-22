@@ -10,7 +10,7 @@ Route workspace-unit documentation work to lifecycle rules or focused operating 
 | --- | --- |
 | [REQ Document Lifecycle](./document-lifecycle.md) | Defines unit-level document-model selection, document-type/REQ placement, ownership, creation triggers, stable IDs, status, evidence, links, and legacy preservation. |
 | [Session Workflows](./session-workflows.md) | Defines selective discovery, work classification, ROADMAP and GOAL prerequisites, Phase operations, and final checks. |
-| [User-Written Requests](./user-request-intake.md) | Defines submission layout, indexes, source traceability, and the execution decision for `docs/user/` requests. |
+| [User-Written Requests](./user-request-intake.md) | Defines feature folders, checklist registration, source traceability, and implementation intake for `docs/user/`. |
 
 ## Usage
 

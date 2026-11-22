@@ -1,6 +1,6 @@
 ---
 name: workspace-unit-doc-manager
-description: Plan project, app, or package implementation in ROADMAP and GOAL, including small corrections. Handle user submissions in docs/user/ and manage owner-specific docs and REQ lifecycles.
+description: Register explicitly reported additions under docs/user/, plan project, app, or package implementation in ROADMAP and GOAL, and manage owner-specific docs and REQ lifecycles.
 ---
 
 # Workspace Unit Doc Manager
@@ -9,7 +9,7 @@ description: Plan project, app, or package implementation in ROADMAP and GOAL, i
 
 Manage the document lifecycle for work owned by a project or one workspace unit. Keep requirements, revision feedback, implementation detail, phased status, completion criteria, verification, and current architecture traceable in the owner's documentation root without migrating valid history.
 
-Apply this Skill to project or Workspace Unit implementation requests from chat or `docs/user/`, including small corrections and requests that omit document names. Also apply it when starting durable documentation or managing REQ ownership, acceptance criteria, phases, architecture transitions, legacy integration, or focused discovery. Questions, read-only investigations, and planning-only requests can proceed directly.
+Apply this Skill when a user reports adding a round or request documents under `docs/user/`, or requests project or Workspace Unit implementation from chat or `docs/user/`, including small corrections and requests that omit document names. Also apply it when starting durable documentation or managing REQ ownership, acceptance criteria, phases, architecture transitions, legacy integration, or focused discovery. Questions, read-only investigations, and planning-only requests can proceed directly.
 
 ## Core Principles
 
@@ -31,12 +31,12 @@ Start at [references/README.md](./references/README.md), then load only the guid
 
 - Read [REQ Document Lifecycle](./references/document-lifecycle.md) for document-model selection, placement, ownership, creation triggers, identifiers, status, evidence, links, and legacy preservation.
 - Read [Session Workflows](./references/session-workflows.md) for selective discovery, new-work and revision classification, Phase tracing and completion, target-instruction conflicts, and final checks.
-- Read [User-Written Requests](./references/user-request-intake.md) when a user submits Markdown under `docs/user/`.
+- Read [User-Written Requests](./references/user-request-intake.md) when a user reports additions to or requests work from `docs/user/`.
 
 ## Workflow
 
 1. Read applicable `AGENTS.md` files, identify whether the project or an application or package owns the work, and use its established documentation root or start its own `docs/` root.
-2. Resolve any user submission through its source indexes. Find the relevant REQ through the requirements index and load the documents required by the task.
+2. Register explicitly reported additions through the user request guidance. If the task is registration only, finish after checking the index. For implementation, resolve submissions through the source indexes, find the relevant REQ, and load the required documents.
 3. Classify new features, revisions to an existing REQ, and small independent corrections without inventing scope.
 4. Preserve open choices and resolve consequential instruction, scope, ownership, permission, or compatibility conflicts before edits they affect. Apply the lifecycle rules for IDs, document triggers, links, evidence, and status ownership.
 5. For implementation requests, verify or prepare the ROADMAP and GOAL before implementation edits. For a broad `docs/user/` submission, end the task after plan preparation and wait for the user's direction to implement.

@@ -53,7 +53,7 @@ The tree shows ownership, not mandatory files. For new documentation, `<unit-doc
 | Location | Owned information | Creation trigger |
 | --- | --- | --- |
 | `REQUIREMENTS/REQ02.md` | User problem, confirmed requirements, scope, constraints, and verifiable acceptance criteria | Substantial feature needs durable scope, acceptance, or phased coordination |
-| [`docs/user/`](./user-request-intake.md) | Original user-written submissions and their round and feature indexes | The user submits Markdown as the request |
+| [`docs/user/`](./user-request-intake.md) | Original user-written submissions and their central checklist, with legacy indexes where present | The user submits Markdown as the request |
 | `FEEDBACK/REQ02/<topic>.md` in a new unit | Meaningful revision feedback, its examples, rationale, and handling history for an existing feature or its requirements | The revision materially affects documented direction or criteria, or preserving its context helps later work |
 | `REQUESTS/REQ02/<topic>.md` in an established unit | Individual request, question, change input, and handling history under that unit's earlier model | The unit already uses `REQUESTS` and preserving an individual record helps |
 | `SPEC/REQ02/<feature-area>.md` | Behavior, UI, data, or other implementation-facing rules | Detail is needed beyond acceptance criteria |

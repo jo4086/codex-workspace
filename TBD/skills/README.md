@@ -10,6 +10,6 @@ This index lists every Skill plan in this directory. A checked box means all cur
 - [x] [project-structures](./project-structures/README.md) — React and Electron structure Skills implemented.
 - [x] [react-ui-style](./react-ui-style/README.md) — Recorded requests implemented and validated.
 - [x] [skill-spec-designer](./skill-spec-designer/README.md) — Recorded requests implemented and validated.
-- [x] [workspace-unit-doc-manager](./workspace-unit-doc-manager/README.md) — [User-written requests in `docs/user/`](./workspace-unit-doc-manager/REQUEST03.md) and [ROADMAP and GOAL before implementation](./workspace-unit-doc-manager/REQUEST04.md) implemented and validated. Earlier REQ, FEEDBACK, and first-document `docs/` work is complete.
+- [x] [workspace-unit-doc-manager](./workspace-unit-doc-manager/README.md) — [Feature folders and direct checklist indexing for user submissions](./workspace-unit-doc-manager/REQUEST05.md) implemented and validated. Earlier requests are complete.
 
 When a new Skill plan or numbered Skill request is added, add its entry or uncheck the existing entry. Check it only after the applicable implementation and validation are complete and the component README records that result. Keep the reasons above in sync with the component documents.
