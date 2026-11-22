@@ -6,13 +6,13 @@ Convert a planned Skill specification in `TBD/skills/<skill-name>/README.md` int
 
 ## Workflow
 
-1. Read the specification and every local document it explicitly requires.
+1. Read the specification and every local document it explicitly requires. If its index lists numbered requests, [resolve conflicting requests](./extending.md#resolve-conflicting-requests) before implementing their surviving scope.
 2. Separate requirements, preferences, restrictions, completion criteria, and unresolved decisions.
 3. Inspect applicable repository instructions, related user-authored Skills, and available creation guidance.
 4. Define purpose, activation conditions, responsibility boundaries, and Cross-Skill relationships.
 5. Design the smallest reference hierarchy that satisfies the specification. When the specification requires named files, retain them unless a conflict makes implementation impossible.
 6. Write individual references, category indexes, the root index, and `SKILL.md`, in that order.
-7. Compare the result with every requirement and completion criterion.
+7. Compare the result with each active requirement and its completion criteria.
 8. Run structural, link, format, and relevant behavioral checks.
 9. Record completion evidence in the component's TBD README. Check its `TBD/skills/README.md` entry only if no planned or unverified work remains; otherwise leave it unchecked and identify the remaining work.
 

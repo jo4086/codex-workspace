@@ -6,7 +6,7 @@ Change an existing Skill while preserving its established architecture and unrel
 
 ## Extension Workflow
 
-1. When implementing a numbered TBD change request, read `TBD/skills/<skill-name>/README.md` and the selected `REQUEST*.md` before editing. Keep earlier requests and the original specification available.
+1. When implementing a numbered TBD change request, read the component README and the selected request. Before editing, apply [Resolve conflicting requests](#resolve-conflicting-requests) to other requests governing the same behavior.
 2. Enter through `SKILL.md` and follow its routing to the affected references.
 3. Inspect callers, indexes, related Skills, and applicable instructions before moving or removing content.
 4. Update only the references that own the requested behavior.
@@ -17,6 +17,15 @@ Change an existing Skill while preserving its established architecture and unrel
 9. Review all work for that Skill listed in its TBD README. Check its `TBD/skills/README.md` entry only when the original plan and every applicable request are implemented and validated. Otherwise leave the entry unchecked and link the remaining work. A `SKILL.md` alone does not prove that all TBD work is complete.
 
 The TBD request retains its original date and wording as the requirement source. Request creation and indexing belong to `skill-spec-designer`; Hook implementation needs its own owner.
+
+## Resolve conflicting requests
+
+Use the component index to find related requests. Carry compatible requirements forward. Resolve a conflict when satisfying one requirement would violate another under the same conditions.
+
+- If the user clearly withdrew a requirement or adopted a replacement, apply that decision directly. Request order, dates, and tentative suggestions alone do not establish a choice.
+- If intent is unclear, name the conflicting request IDs, explain what each would change, and ask which behavior to keep. Preserve both statuses and defer the affected implementation until the user answers. Either request may survive.
+- Preserve request files, IDs, and validation history. For a fully withdrawn request, mark its status cancelled and move its dated link under `### Cancelled` in the component README with `- [c]`, the reason for the decision, and a link to the surviving request when applicable. For partial withdrawal, mark only the affected item `[c]` and record the reason beside it. Keep independent requirements active.
+- Implement and validate the surviving scope. Exclude cancelled items from outstanding work when updating the component and parent Skill indexes.
 
 ## Review Workflow
 

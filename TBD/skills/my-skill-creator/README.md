@@ -293,3 +293,4 @@ The Skill is considered implemented when:
 - [x] **2026-11-08:** [REQUEST01 — Implement and close numbered Skill requests](./REQUEST01.md). Implemented and validated; checks are recorded in the request.
 - [x] **2026-11-18:** [REQUEST02 — Reference images for managed Skills](./REQUEST02.md). Implemented and validated; checks are recorded in the request.
 - [x] **2026-11-18:** [REQUEST03 — Close the TBD Skill status index entry](./REQUEST03.md). Implemented and validated; checks are recorded in the request. REQUEST02 remains open.
+- [x] **2026-11-23:** [REQUEST04 — Resolve conflicting TBD requests before Skill implementation](./REQUEST04.md). Implemented and validated.
