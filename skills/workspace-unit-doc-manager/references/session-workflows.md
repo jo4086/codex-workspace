@@ -19,6 +19,18 @@ Load only context needed for the requested operation:
 
 Do not load every category, every REQ, or all historical Phase records by default.
 
+## Brief Next or Remaining Work
+
+Use this read-only workflow when the user asks what work remains or should come next, whether or not the request names a document, REQ, or Phase. This includes a first request in a new session. Interpret wording such as “brief the next work,” “brief the remaining work,” “what remains?”, and “what should I do next?” by intent rather than as exact trigger phrases.
+
+1. Use [Selective Discovery](#selective-discovery) to identify the owning project or Workspace Unit and its existing documentation entrypoints.
+2. Read the relevant index and `ROADMAP.md`, then the applicable GOAL. Follow direct links to requirements, detailed Phase plans, or REVIEW only when they establish scope, dependencies, blockers, cancellation, or verified completion.
+3. Separate completed and cancelled items from pending or blocked work. Recommend the next work from documented order, dependencies, status, and completion evidence; label any inference and any missing or conflicting evidence.
+4. Brief the remaining work, the recommended next work and why, and known prerequisites or blockers. Cite the source documents by path so the user can inspect the basis.
+5. Search available documents before asking for information. Never ask the user to provide the briefing they requested. If missing ownership or conflicting records prevent a reliable conclusion, report what is established and ask only for the decision or fact needed to resolve the uncertainty.
+
+A briefing request does not authorize implementation, planning-document creation, checklist changes, or Phase status changes. Read-only and planning-only requests bypass the planning writes in [Plan Before Implementation](#plan-before-implementation), not the existing-document reads needed to answer them.
+
 ## Classify New Work and Revisions
 
 1. Identify the project's or unit's documentation root and document model from its instructions and existing documents. Start new documentation in that owner's `docs/`; never switch an established `REQUESTS` unit to `FEEDBACK` as a side effect of handling work.
@@ -32,7 +44,7 @@ Do not load every category, every REQ, or all historical Phase records by defaul
 
 ## Plan Before Implementation
 
-1. Inspect the request, ownership, and affected context. Apply this workflow to implementation work from chat or [user-written requests](./user-request-intake.md), including small corrections. Handle questions, read-only investigations, and planning-only requests directly.
+1. Inspect the request, ownership, and affected context. Apply this workflow to implementation work from chat or [user-written requests](./user-request-intake.md), including small corrections. Handle questions, read-only investigations, and planning-only requests without implementation-planning writes; use the briefing workflow when the user asks what remains or should come next.
 2. Check the owner's `ROADMAP.md` for scope and sequence and the applicable GOAL for deliverables and verifiable completion conditions. Reuse existing entries when they cover the requested work. If either record is missing or the scope changes, write or update the planning documents first, before editing implementation files. A chat summary or internal plan leaves the written planning prerequisite unmet.
 3. For a small correction without a REQ, link a short ROADMAP entry to a brief GOAL in the owner's existing layout. If there is no GOAL convention, use `GOAL/<topic>.md` under the owner's documentation root. Use the owner's applicable Phase and GOAL paths for REQ-owned work. Add a new REQ, detailed Phase plan, or SPEC only when its lifecycle trigger applies. Start new completion conditions unchecked.
 4. Once the records are ready, proceed with clearly scoped small work and its verification in the same task. For other chat requests, proceed according to the user's authorized scope. For a broad submission under `docs/user/`, finish the intake with planning documents and wait for the user's direction to implement.

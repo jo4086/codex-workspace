@@ -11,6 +11,6 @@ This index lists every Skill plan in this directory. A checked box means all cur
 - [x] [react-router](./react-router/README.md) — The dedicated routes-directory, entry-only `App.tsx`, and first URL-design review request is implemented and validated.
 - [x] [react-ui-style](./react-ui-style/README.md) — Recorded requests implemented and validated.
 - [x] [skill-spec-designer](./skill-spec-designer/README.md) — Recorded requests implemented and validated.
-- [x] [workspace-unit-doc-manager](./workspace-unit-doc-manager/README.md) — [Feature folders and direct checklist indexing for user submissions](./workspace-unit-doc-manager/REQUEST05.md) implemented and validated. Earlier requests are complete.
+- [x] [workspace-unit-doc-manager](./workspace-unit-doc-manager/README.md) — [Next and remaining work briefings](./workspace-unit-doc-manager/REQUEST06.md) implemented and validated. Earlier requests are complete.
 
 When a new Skill plan or numbered Skill request is added, add its entry or uncheck the existing entry. Check it only after the applicable implementation and validation are complete and the component README records that result. Keep the reasons above in sync with the component documents.
